@@ -1,4 +1,5 @@
 # dsa-map
 DSA map (Obsidian)
 
-\+ auto-commit
+- Automatic commits every minute
+- Links to implementations in Colab
