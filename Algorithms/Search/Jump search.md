@@ -4,5 +4,5 @@ Complexity: $O(\sqrt{n})$
 import math
 
 def jump_search(array, target):
-	block_size = math.floor(len(array)**0.5
+	block_size = math.floor(len(array)**0.5)
 ```
