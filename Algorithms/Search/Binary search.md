@@ -1,5 +1,7 @@
 [Colab link](https://colab.research.google.com/drive/1TaFKeZL5LGn-p8OhnHw1tQ5BCoZGU0GH?usp=sharing)
 
+Complexity: $O(n \log n)$
+
 ```python
 def binary_search_a(array, target):
 	if not array:
