@@ -45,5 +45,7 @@ def binary_search(array, target):
 			l = m + 1
 		elif array[m] > target:
 			r = m - 1
-		e 
+		else:
+			return m
+	return -1 
 ```
