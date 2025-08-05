@@ -1,3 +1,5 @@
+[Colab link](https://colab.research.google.com/drive/1R0PGiA_5jlXIu9Rg4g7muxN0y-x8Unwt?usp=sharing)
+
 Complexity: $O(n)$
 
 ```python
