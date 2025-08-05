@@ -10,12 +10,9 @@ def lower_bound_search(array, target):
 	while r >= l:
 		m = (r + l) // 2
 		if array[m] < target:
-
 			l = m + 1
-	
-	else:
-	
-	r = m - 1
-	
+		else:
+			r = m - 1
+			
 	return l if l < len(array) and array[l] == target else -1
 ```
