@@ -27,7 +27,7 @@
 		{"id":"be51c1c38eb3c224","type":"text","text":"#### Агрегация\n\n- `sum(arr)` \n- `min(arr)`, `max(arr)`\n- `all(lst)`, `any(lst)` - конъюнкция/дизъюнкция\n\n```python\nimport statistics\nstatistics.mean(lst)   \nstatistics.median(lst)   \nstatistics.mode(lst)   \nstatistics.stdev(lst)\n\n```","x":340,"y":574,"width":640,"height":323},
 		{"id":"fe1824679faa31ac","type":"text","text":"#### Фильтрация\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":340,"y":914,"width":640,"height":160},
 		{"id":"b092bb7521a909c1","type":"text","text":"#### Sortings\n","x":-1440,"y":1700,"width":250,"height":80},
-		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- Linear search\n- [[Binary search]]","x":-1120,"y":1700,"width":268,"height":160}
+		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- Linear search\n- [[Binary Search]]","x":-1120,"y":1700,"width":268,"height":160}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
