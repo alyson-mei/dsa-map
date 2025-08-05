@@ -22,7 +22,7 @@
 		{"id":"2a1f1806bfbdce98","type":"text","text":"**Shift**\n```python\narr.append(None)\nfor i in range(len(arr)-2, -1, -1):\n\tarr[i+1] = arr[i]\n```\n$O(n)$","x":-410,"y":740,"width":573,"height":200},
 		{"id":"b191ab69fbf36255","type":"text","text":"**Reverse**\n- `array.reverse()`\n\n$O(n)$","x":-410,"y":566,"width":240,"height":154},
 		{"id":"7905b62cddb4d4d2","type":"text","text":"**Clear and Del**\n- `array.clear()` | $O(n)$\n- `del array` | $O(1)$","x":-150,"y":566,"width":313,"height":154},
-		{"id":"44e18d46d0d7b999","type":"text","text":"**Реализация**\n\nНепрерывный блок памяти, в котором хранятся\na) объекты одного размера (для статических массивов)\nб) указатели на объекты (для динамических массивов)","x":-1480,"y":127,"width":520,"height":554},
+		{"id":"44e18d46d0d7b999","type":"text","text":"**Реализация**\n\nНепрерывный блок памяти, в котором хранятся\na) объекты одного размера (для статических массивов)\nб) указатели на объекты (для динамических массивов)\n\nСтатический (C style)\n\n","x":-1480,"y":127,"width":520,"height":554},
 		{"id":"b5966777f4aa3896","type":"text","text":"**Map**\n`arr = list(map(int, input().split()))`","x":-410,"y":359,"width":573,"height":101},
 		{"id":"e6aa1ea649c5dc75","type":"text","text":"**Concatenation**\n- `arr1 + arr2`\n\n$O(\\textrm{len}(\\textrm{arr2}))$","x":-37,"y":186,"width":200,"height":154},
 		{"id":"f078e6654b31e566","type":"text","text":"**List comprehension**\n\n```python\narr = [elmnt for elmnt in iterable if condition(iterable)]\n```","x":-410,"y":186,"width":350,"height":154},
