@@ -2,20 +2,18 @@
 	"nodes":[
 		{"id":"4d3f2c23eedb59ef","type":"group","x":-480,"y":100,"width":1540,"height":1480,"label":"Global CRUD"},
 		{"id":"79f1928828b930cd","type":"group","x":-1500,"y":1640,"width":1780,"height":680,"label":"Algorithms"},
-		{"id":"6aa690f2b524dda5","type":"group","x":-1500,"y":960,"width":980,"height":620,"label":"Local CRUD"},
 		{"id":"f02a160e094281b5","type":"group","x":-1500,"y":100,"width":980,"height":814,"label":"Implementation"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-430,"y":540,"width":670,"height":1000,"label":"Update / Delete"},
+		{"id":"6aa690f2b524dda5","type":"group","x":-1500,"y":960,"width":980,"height":620,"label":"Local CRUD"},
 		{"id":"96a6e6e558c80c91","type":"group","x":320,"y":280,"width":680,"height":834,"label":"Read / Aggregate / Filter / etc."},
 		{"id":"19c50a914f307417","type":"group","x":-430,"y":166,"width":670,"height":314,"label":"Create"},
 		{"id":"44e18d46d0d7b999","type":"text","text":"#### Реализация\n\nНепрерывный блок памяти, в котором хранятся\na) объекты одного размера (для статических массивов)\nб) указатели на объекты (для динамических массивов)\n\n**Статический массив(C style)**\n`int arr[5] = {1, 2, 3, 4, 5};`\n\n**Динамический массив (\"Vector\", Python list, Java ArrayList)**\nРеализуется как:\n\n- Буфер (array) – выделенный блок памяти определённой ёмкости.\n    \n- Размер (size) – фактическое количество элементов.\n    \n- Ёмкость (capacity) – сколько элементов может влезть без перевыделения.\n    \n\nКогда массив заполняется:\n\n1. Выделяется новый блок памяти (обычно увеличенный в 1.5–2 раза).\n    \n2. Старые элементы копируются ($O(n)$).\n    \n3. Новый элемент добавляется.","x":-1480,"y":127,"width":780,"height":713},
 		{"id":"82b5962b624f4054","type":"text","text":"## Array\n\n- **Тип**: `type(array)` -> smth like `Array<Int>`\n- **Длина**: `len(array)`\n\n**Предполагаем**:\n- Динамичность по запросу\n- Тип Any по умолчанию\n- Заполнен некоторыми значениями при создании","x":-700,"y":-293,"width":500,"height":293,"color":"6"},
 		{"id":"f078e6654b31e566","type":"text","text":"#### List comprehension\n\n```python\narr = [elmnt for elmnt in iterable if condition(iterable)]\n```","x":-410,"y":186,"width":350,"height":154},
-		{"id":"f9ded7ac3a07b0d4","type":"text","text":"#### Доступ по индексу (read/update)\n- `x = arr[i]` | `0 <= i < len(arr)`\n- `arr[i] = 17` | `0 <= i < len(arr)`\n\n**Замечание**:\n- Можно использовать отрицательные (syntactic sugar)\n\n$O(1)$","x":-1480,"y":980,"width":400,"height":280},
-		{"id":"1b0a3f2961c3a69a","type":"text","text":"#### Добавление/удаление (create/delete)\n\n- `arr.append(elmnt)`\n- `x = arr.pop()` | `len(arr) > 0`\n- `arr.insert(pos, elmnt)`\n- `arr.pop(pos)` | `0 <= i < len(arr)`\n\n$O(1)$ в конец, $O(n)$ в общем случае","x":-1040,"y":980,"width":500,"height":280},
 		{"id":"213c57472ff05455","type":"text","text":"### String","x":-60,"y":-293,"width":250,"height":60},
-		{"id":"b191ab69fbf36255","type":"text","text":"#### Reverse\n- `array.reverse()`\n\n$O(n)$","x":-389,"y":566,"width":240,"height":154},
 		{"id":"b5966777f4aa3896","type":"text","text":"#### Map\n`arr = list(map(int, input().split()))`","x":-410,"y":360,"width":594,"height":100},
 		{"id":"e6aa1ea649c5dc75","type":"text","text":"#### Concatenation\n- `arr1 + arr2`\n\n$O(\\textrm{len}(\\textrm{arr2}))$","x":-40,"y":186,"width":230,"height":154},
+		{"id":"b191ab69fbf36255","type":"text","text":"#### Reverse\n- `array.reverse()`\n\n$O(n)$","x":-389,"y":566,"width":240,"height":154},
 		{"id":"84696f3096501891","type":"text","text":"#### Sort\n\n- `arr.sort(reverse, key)`\n- `new_arr = sorted(arr, reverse, key)`\n\n**Сортировки** (по умолчанию non-decreasing order):\n1. Квадратичные $(O(n^2))$\n\t- Выбором: находим минимальный элемент, меняем его с первым из неотсортированной части\n\t- Вставками: размещаем новый элемент в правильное место в отсортированной части\n\t- Пузырьком: *цепляем* максимальный элемент неотсортированной части, переносим в конец\n2. Квазилинейная $(O(nlogn))$\n\t- Merge sort (слиянием): массив разбивается на две части, каждая сортируется отдельно, \n\t- Quicksort (\"быстрая\")","x":-389,"y":960,"width":573,"height":560},
 		{"id":"2a1f1806bfbdce98","type":"text","text":"#### Shift\n```python\narr.append(None)\nfor i in range(len(arr)-2, -1, -1):\n\tarr[i+1] = arr[i]\n```\n$O(n)$","x":-389,"y":740,"width":573,"height":200},
 		{"id":"ce9a180332abed35","type":"text","text":"### Tuple","x":310,"y":-293,"width":250,"height":60},
@@ -24,10 +22,12 @@
 		{"id":"7905b62cddb4d4d2","type":"text","text":"#### Clear and Del\n- `array.clear()` | $O(n)$\n- `del array` | $O(1)$","x":-129,"y":566,"width":313,"height":154},
 		{"id":"72a7a8461b6fbd4d","type":"text","text":"#### Поиск\n- `elmnt in arr`\n- `arr.index()` - исключение, если нет элемента\n- `arr.count(elmnt)` - подсчёт количества вхождений\n\n$O(n)$\n\n\\+ bisect - для бинарного поиска: $O(nlogn)$","x":340,"y":300,"width":640,"height":254},
 		{"id":"be51c1c38eb3c224","type":"text","text":"#### Агрегация\n\n- `sum(arr)` \n- `min(arr)`, `max(arr)`\n- `all(lst)`, `any(lst)` - конъюнкция/дизъюнкция\n\n```python\nimport statistics\nstatistics.mean(lst)   \nstatistics.median(lst)   \nstatistics.mode(lst)   \nstatistics.stdev(lst)\n\n```","x":340,"y":574,"width":640,"height":323},
+		{"id":"f9ded7ac3a07b0d4","type":"text","text":"#### Доступ по индексу (read/update)\n- `x = arr[i]` | `0 <= i < len(arr)`\n- `arr[i] = 17` | `0 <= i < len(arr)`\n\n**Замечание**:\n- Можно использовать отрицательные (syntactic sugar)\n\n$O(1)$","x":-1480,"y":980,"width":400,"height":280},
+		{"id":"1b0a3f2961c3a69a","type":"text","text":"#### Добавление/удаление (create/delete)\n\n- `arr.append(elmnt)`\n- `x = arr.pop()` | `len(arr) > 0`\n- `arr.insert(pos, elmnt)`\n- `arr.pop(pos)` | `0 <= i < len(arr)`\n\n$O(1)$ в конец, $O(n)$ в общем случае","x":-1040,"y":980,"width":500,"height":280},
 		{"id":"fe1824679faa31ac","type":"text","text":"#### Фильтрация\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":340,"y":914,"width":640,"height":160},
 		{"id":"3ab0bcbe9839b995","type":"text","text":"#### Итерирование\n```python\nfor i in range(start, stop, step):\n\t...\nfor elmnt in arr:\n\t...\n```\n\n$O(n)$","x":-1480,"y":1280,"width":400,"height":240},
 		{"id":"b092bb7521a909c1","type":"text","text":"#### Sortings\n","x":-1440,"y":1700,"width":250,"height":80},
-		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [Linear search](obsidian://open?vault=General%20CS&file=DSA%2FAlgorithms%2FSearch%2FLinear%20search)\n- [[Binary search]]\n- ","x":-1120,"y":1700,"width":268,"height":220}
+		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- Bound binary search","x":-1120,"y":1700,"width":268,"height":220}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
