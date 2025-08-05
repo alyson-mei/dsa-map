@@ -1,5 +1,8 @@
 ```python
 def binary_search(array, target):
+	if not array:
+		return -1
+		
 	l = 0
 	r = len(array) - 1
 	while r > l + 1:
