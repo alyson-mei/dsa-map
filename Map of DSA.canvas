@@ -1,13 +1,12 @@
 {
 	"nodes":[
-		{"id":"4d3f2c23eedb59ef","type":"group","x":-480,"y":100,"width":1440,"height":1480,"label":"Global CRUD"},
+		{"id":"4d3f2c23eedb59ef","type":"group","x":-480,"y":100,"width":1660,"height":1480,"label":"Global CRUD"},
 		{"id":"79f1928828b930cd","type":"group","x":-1380,"y":1660,"width":1660,"height":680,"label":"Algorithms"},
 		{"id":"f02a160e094281b5","type":"group","x":-1500,"y":100,"width":980,"height":814,"label":"Implementation"},
 		{"id":"6aa690f2b524dda5","type":"group","x":-1500,"y":960,"width":980,"height":620,"label":"Local CRUD"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-430,"y":540,"width":614,"height":980,"label":"Update / Delete"},
-		{"id":"96a6e6e558c80c91","type":"group","x":220,"y":166,"width":680,"height":834,"label":"Read / Aggregate / Filter / etc."},
-		{"id":"19c50a914f307417","type":"group","x":-430,"y":166,"width":614,"height":314,"label":"Create"},
-		{"id":"ce9a180332abed35","type":"text","text":"### Tuple","x":310,"y":-293,"width":250,"height":60},
+		{"id":"96a6e6e558c80c91","type":"group","x":400,"y":166,"width":680,"height":834,"label":"Read / Aggregate / Filter / etc."},
+		{"id":"19c50a914f307417","type":"group","x":-430,"y":166,"width":670,"height":314,"label":"Create"},
 		{"id":"b84e8ad8edb48fe4","type":"text","text":"### Set","x":669,"y":-293,"width":250,"height":60},
 		{"id":"11005d1913a0d8b1","type":"text","text":"### Hashmap","x":1060,"y":-293,"width":250,"height":60},
 		{"id":"84696f3096501891","type":"text","text":"**Sort**\n\n- `arr.sort(reverse, key)`\n- `new_arr = sorted(arr, reverse, key)`\n\n**Сортировки** (по умолчанию non-decreasing order):\n1. Квадратичные $(O(n^2))$\n\t- Выбором: находим минимальный элемент, меняем его с первым из неотсортированной части\n\t- Вставками: размещаем новый элемент в правильное место в отсортированной части\n\t- Пузырьком: *цепляем* максимальный элемент неотсортированной части, переносим в конец\n2. Квазилинейная $(O(nlogn))$\n\t- Merge sort (слиянием): массив разбивается на две части, каждая сортируется отдельно, \n\t- Quicksort (\"быстрая\")","x":-410,"y":960,"width":573,"height":526},
@@ -20,14 +19,15 @@
 		{"id":"b191ab69fbf36255","type":"text","text":"**Reverse**\n- `array.reverse()`\n\n$O(n)$","x":-410,"y":566,"width":240,"height":154},
 		{"id":"7905b62cddb4d4d2","type":"text","text":"**Clear and Del**\n- `array.clear()` | $O(n)$\n- `del array` | $O(1)$","x":-150,"y":566,"width":313,"height":154},
 		{"id":"44e18d46d0d7b999","type":"text","text":"**Реализация**\n\nНепрерывный блок памяти, в котором хранятся\na) объекты одного размера (для статических массивов)\nб) указатели на объекты (для динамических массивов)\n\nСтатический (C style)\n`int arr[5] = {1, 2, 3, 4, 5};`\n\nД","x":-1480,"y":127,"width":520,"height":554},
-		{"id":"b5966777f4aa3896","type":"text","text":"**Map**\n`arr = list(map(int, input().split()))`","x":-410,"y":359,"width":573,"height":101},
-		{"id":"e6aa1ea649c5dc75","type":"text","text":"**Concatenation**\n- `arr1 + arr2`\n\n$O(\\textrm{len}(\\textrm{arr2}))$","x":-37,"y":186,"width":200,"height":154},
-		{"id":"f078e6654b31e566","type":"text","text":"#### List comprehension**\n\n```python\narr = [elmnt for elmnt in iterable if condition(iterable)]\n```","x":-410,"y":186,"width":350,"height":154},
+		{"id":"b5966777f4aa3896","type":"text","text":"#### Map\n`arr = list(map(int, input().split()))`","x":-410,"y":360,"width":594,"height":100},
+		{"id":"e6aa1ea649c5dc75","type":"text","text":"#### Concatenation\n- `arr1 + arr2`\n\n$O(\\textrm{len}(\\textrm{arr2}))$","x":-40,"y":186,"width":230,"height":154},
+		{"id":"f078e6654b31e566","type":"text","text":"#### List comprehension\n\n```python\narr = [elmnt for elmnt in iterable if condition(iterable)]\n```","x":-410,"y":186,"width":350,"height":154},
 		{"id":"82b5962b624f4054","type":"text","text":"## Array\n\n- **Тип**: `type(array)` -> smth like `Array<Int>`\n- **Длина**: `len(array)`\n\n**Предполагаем**:\n- Динамичность по запросу\n- Тип Any по умолчанию\n- Заполнен некоторыми значениями при создании","x":-700,"y":-293,"width":500,"height":293,"color":"6"},
 		{"id":"213c57472ff05455","type":"text","text":"### String","x":-60,"y":-293,"width":250,"height":60},
-		{"id":"72a7a8461b6fbd4d","type":"text","text":"**Поиск**\n- `elmnt in arr`\n- `arr.index()` - исключение, если нет элемента\n- `arr.count(elmnt)` - подсчёт количества вхождений\n\n$O(n)$\n\n\\+ bisect - для бинарного поиска: $O(nlogn)$","x":240,"y":186,"width":640,"height":254},
-		{"id":"be51c1c38eb3c224","type":"text","text":"**Агрегация**\n\n- `sum(arr)` \n- `min(arr)`, `max(arr)`\n- `all(lst)`, `any(lst)` - конъюнкция/дизъюнкция\n\n```python\nimport statistics\nstatistics.mean(lst)   \nstatistics.median(lst)   \nstatistics.mode(lst)   \nstatistics.stdev(lst)\n\n```","x":240,"y":460,"width":640,"height":323},
-		{"id":"fe1824679faa31ac","type":"text","text":"**Фильтрация**\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":240,"y":800,"width":640,"height":160}
+		{"id":"ce9a180332abed35","type":"text","text":"### Tuple","x":310,"y":-293,"width":250,"height":60},
+		{"id":"72a7a8461b6fbd4d","type":"text","text":"**Поиск**\n- `elmnt in arr`\n- `arr.index()` - исключение, если нет элемента\n- `arr.count(elmnt)` - подсчёт количества вхождений\n\n$O(n)$\n\n\\+ bisect - для бинарного поиска: $O(nlogn)$","x":420,"y":186,"width":640,"height":254},
+		{"id":"be51c1c38eb3c224","type":"text","text":"**Агрегация**\n\n- `sum(arr)` \n- `min(arr)`, `max(arr)`\n- `all(lst)`, `any(lst)` - конъюнкция/дизъюнкция\n\n```python\nimport statistics\nstatistics.mean(lst)   \nstatistics.median(lst)   \nstatistics.mode(lst)   \nstatistics.stdev(lst)\n\n```","x":420,"y":460,"width":640,"height":323},
+		{"id":"fe1824679faa31ac","type":"text","text":"**Фильтрация**\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":420,"y":800,"width":640,"height":160}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
