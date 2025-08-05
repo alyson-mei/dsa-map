@@ -4,6 +4,11 @@ def binary_search(array, target):
 	r = len(array) - 1
 	while r > l + 1:
 		m = (r + l) // 2
-		if arr[m] < target:
-			target 
+		if array[m] < target:
+			l = m
+		else:
+			r = m
+	if array[l] == target:
+		return l
+	elif array[r]
 ```
