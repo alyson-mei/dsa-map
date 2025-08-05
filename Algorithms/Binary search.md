@@ -39,5 +39,6 @@ array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 def binary_search(array, target):
 	l = 0
 	r = len(target) - 1
-	while 
+	while l <= r:
+	
 ```
