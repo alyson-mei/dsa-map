@@ -1,3 +1,5 @@
+[Colab link](https://colab.research.google.com/drive/1uXoGGUgYg0MVvtCftUn__eTXJZ_HJW2Q?usp=sharing)
+
 Complexity: $O(\sqrt{n})$
 
 ```python
