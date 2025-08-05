@@ -10,5 +10,6 @@ def binary_search(array, target):
 			r = m
 	if array[l] == target:
 		return l
-	elif array[r]
+	elif array[r] == target:
+	r
 ```
