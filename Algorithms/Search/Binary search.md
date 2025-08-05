@@ -1,4 +1,4 @@
-https://colab.research.google.com/drive/1TaFKeZL5LGn-p8OhnHw1tQ5BCoZGU0GH?usp=sharing
+[Colab link]()
 
 ```python
 def binary_search_a(array, target):
