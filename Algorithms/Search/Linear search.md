@@ -1,3 +1,5 @@
+Complexity: $O(n)$
+
 ```python
 def linear_search(array, target):
 	for i in range(len(array)):
