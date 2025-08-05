@@ -16,9 +16,8 @@ while prev < n and array[min(step, n) - 1] < target:
 
 for i in range(prev, min(step, n)):
 	if array[i] == target:
-	return i
+		return i
 
-  
 
 return -1
 ```
