@@ -19,5 +19,7 @@ def binary_search(array, target):
 		return -1
 ```
 
-It works, but it's not a standard way to implement a binary search. It's intuitive for a simple case, but doesn't work that well with 
+It works, but it's not a standard way to implement a binary search. It's intuitive for a simple case, but doesn't work that well when we search for some condition
+
+
 
