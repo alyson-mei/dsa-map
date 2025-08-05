@@ -1,5 +1,7 @@
+https://colab.research.google.com/drive/1TaFKeZL5LGn-p8OhnHw1tQ5BCoZGU0GH?usp=sharing
+
 ```python
-def binary_search(array, target):
+def binary_search_a(array, target):
 	if not array:
 		return -1
 		
@@ -36,7 +38,7 @@ array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 ```python
-def binary_search(array, target):
+def binary_search_b(array, target):
 	l = 0
 	r = len(array) - 1
 	while l <= r:
