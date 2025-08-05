@@ -18,3 +18,6 @@ def binary_search(array, target):
 	else:
 		return -1
 ```
+
+It works, but it's not a standard way to implement a binary search
+
