@@ -38,7 +38,7 @@ array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```python
 def binary_search(array, target):
 	l = 0
-	r = len(target) - 1
+	r = len(array) - 1
 	while l <= r:
 		m = (l + r) // 2
 		if array[m] < target:
