@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"4d3f2c23eedb59ef","type":"group","x":-480,"y":100,"width":1540,"height":1480,"label":"Global CRUD"},
-		{"id":"79f1928828b930cd","type":"group","x":-1500,"y":1660,"width":1780,"height":680,"label":"Algorithms"},
+		{"id":"79f1928828b930cd","type":"group","x":-1500,"y":1640,"width":1780,"height":680,"label":"Algorithms"},
 		{"id":"f02a160e094281b5","type":"group","x":-1500,"y":100,"width":980,"height":814,"label":"Implementation"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-430,"y":540,"width":670,"height":1000,"label":"Update / Delete"},
 		{"id":"6aa690f2b524dda5","type":"group","x":-1500,"y":960,"width":980,"height":620,"label":"Local CRUD"},
@@ -26,8 +26,8 @@
 		{"id":"72a7a8461b6fbd4d","type":"text","text":"#### Поиск\n- `elmnt in arr`\n- `arr.index()` - исключение, если нет элемента\n- `arr.count(elmnt)` - подсчёт количества вхождений\n\n$O(n)$\n\n\\+ bisect - для бинарного поиска: $O(nlogn)$","x":340,"y":300,"width":640,"height":254},
 		{"id":"be51c1c38eb3c224","type":"text","text":"#### Агрегация\n\n- `sum(arr)` \n- `min(arr)`, `max(arr)`\n- `all(lst)`, `any(lst)` - конъюнкция/дизъюнкция\n\n```python\nimport statistics\nstatistics.mean(lst)   \nstatistics.median(lst)   \nstatistics.mode(lst)   \nstatistics.stdev(lst)\n\n```","x":340,"y":574,"width":640,"height":323},
 		{"id":"fe1824679faa31ac","type":"text","text":"#### Фильтрация\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":340,"y":914,"width":640,"height":160},
-		{"id":"b092bb7521a909c1","type":"text","text":"#### Sortings\n","x":-1440,"y":1720,"width":250,"height":80},
-		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- Linear search\n- [[Binary search]]","x":-1120,"y":1720,"width":268,"height":160}
+		{"id":"b092bb7521a909c1","type":"text","text":"#### Sortings\n","x":-1440,"y":1700,"width":250,"height":80},
+		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- Linear search\n- [[Binary search]]","x":-1120,"y":1700,"width":268,"height":160}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
