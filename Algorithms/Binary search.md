@@ -31,7 +31,7 @@ array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 # 1)                    l     m     r  
 # New search in array[5<=...<=6]
 # 2)                   l,m  r
-# New search in 
+# New search in array[] 
 ```
 
 
