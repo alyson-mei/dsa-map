@@ -40,5 +40,10 @@ def binary_search(array, target):
 	l = 0
 	r = len(target) - 1
 	while l <= r:
-	
+		m = (l + r) // 2
+		if array[m] < target:
+			l = m + 1
+		elif array[m] > target:
+			r = m - 1
+		e 
 ```
