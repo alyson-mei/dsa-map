@@ -1,4 +1,4 @@
-[Colab link]()
+[Colab link](https://colab.research.google.com/drive/1oWQeN-t6_sIJlup8Qv30BXeWkKfOuDCe?usp=drive_link)
 
 Complexity: $O(n^2)$
 
