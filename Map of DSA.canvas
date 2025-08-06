@@ -28,7 +28,7 @@
 		{"id":"fe1824679faa31ac","type":"text","text":"#### Фильтрация\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":340,"y":914,"width":640,"height":160},
 		{"id":"3ab0bcbe9839b995","type":"text","text":"#### Итерирование\n```python\nfor i in range(start, stop, step):\n\t...\nfor elmnt in arr:\n\t...\n```\n\n$O(n)$","x":-1480,"y":1280,"width":400,"height":240},
 		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- [[Bound binary search]]","x":-1120,"y":1720,"width":268,"height":220},
-		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n1) $O(n^2)$\n\t- [[Selection sort]]\n\t- [[Insertion sort]]\n\t- [[Bubble sort]]\n2) $O(n \\log n)$\n\t- Merge sort\n\t- Quicksort","x":-1440,"y":1720,"width":280,"height":280}
+		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n1) $O(n^2)$\n\t- [[Selection sort]]\n\t- [[Insertion sort]]\n\t- [[Bubble sort]]\n2) $O(n \\log n)$\n\t- [[Merge sort]]]\n\t- Quicksort","x":-1440,"y":1720,"width":280,"height":280}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
