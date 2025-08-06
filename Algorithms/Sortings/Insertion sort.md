@@ -1,3 +1,4 @@
+Complexity: $O(n^2)$
 
 ```python
 def insertion_sort(array):
