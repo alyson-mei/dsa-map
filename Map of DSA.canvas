@@ -6,8 +6,8 @@
 		{"id":"4f159f671d3e6fb6","type":"group","x":-430,"y":540,"width":670,"height":1000,"label":"Update / Delete"},
 		{"id":"6aa690f2b524dda5","type":"group","x":-1500,"y":960,"width":980,"height":620,"label":"Local CRUD"},
 		{"id":"96a6e6e558c80c91","type":"group","x":320,"y":280,"width":680,"height":834,"label":"Read / Aggregate / Filter / etc."},
+		{"id":"a6ecb3cb0c7025b6","type":"group","x":-1460,"y":1700,"width":628,"height":340,"label":"Basic algorithms"},
 		{"id":"19c50a914f307417","type":"group","x":-430,"y":166,"width":670,"height":314,"label":"Create"},
-		{"id":"a6ecb3cb0c7025b6","type":"group","x":-1460,"y":1700,"width":628,"height":300,"label":"Basic algorithms"},
 		{"id":"44e18d46d0d7b999","type":"text","text":"#### Реализация\n\nНепрерывный блок памяти, в котором хранятся\na) объекты одного размера (для статических массивов)\nб) указатели на объекты (для динамических массивов)\n\n**Статический массив(C style)**\n`int arr[5] = {1, 2, 3, 4, 5};`\n\n**Динамический массив (\"Vector\", Python list, Java ArrayList)**\nРеализуется как:\n\n- Буфер (array) – выделенный блок памяти определённой ёмкости.\n    \n- Размер (size) – фактическое количество элементов.\n    \n- Ёмкость (capacity) – сколько элементов может влезть без перевыделения.\n    \n\nКогда массив заполняется:\n\n1. Выделяется новый блок памяти (обычно увеличенный в 1.5–2 раза).\n    \n2. Старые элементы копируются ($O(n)$).\n    \n3. Новый элемент добавляется.","x":-1480,"y":127,"width":780,"height":713},
 		{"id":"82b5962b624f4054","type":"text","text":"## Array\n\n- **Тип**: `type(array)` -> smth like `Array<Int>`\n- **Длина**: `len(array)`\n\n**Предполагаем**:\n- Динамичность по запросу\n- Тип Any по умолчанию\n- Заполнен некоторыми значениями при создании","x":-700,"y":-293,"width":500,"height":293,"color":"6"},
 		{"id":"f078e6654b31e566","type":"text","text":"#### List comprehension\n\n```python\narr = [elmnt for elmnt in iterable if condition(iterable)]\n```","x":-410,"y":186,"width":350,"height":154},
@@ -28,7 +28,7 @@
 		{"id":"fe1824679faa31ac","type":"text","text":"#### Фильтрация\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":340,"y":914,"width":640,"height":160},
 		{"id":"3ab0bcbe9839b995","type":"text","text":"#### Итерирование\n```python\nfor i in range(start, stop, step):\n\t...\nfor elmnt in arr:\n\t...\n```\n\n$O(n)$","x":-1480,"y":1280,"width":400,"height":240},
 		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- [[Bound binary search]]","x":-1120,"y":1720,"width":268,"height":220},
-		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n1) $O(n^2)$\n\t- [[Selection sort]]Selection sort\n\t- Insertion sort\n\t- Bubble sort\n2) $O(n \\log n)$\n\t- Merge sort\n\t- Quicksort","x":-1440,"y":1720,"width":280,"height":260}
+		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n1) $O(n^2)$\n\t- [[Selection sort]]\n\t- [[Insertion sort]]\n\t- [[Bubble sort]]\n2) $O(n \\log n)$\n\t- Merge sort\n\t- Quicksort","x":-1440,"y":1720,"width":280,"height":280}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
