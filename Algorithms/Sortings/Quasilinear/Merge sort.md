@@ -1,3 +1,5 @@
+[Colab link](https://colab.research.google.com/drive/1TFlLaw7HmBJL9xf4UVdFnZBomXSj43bv?usp=drive_link)
+
 Complexity: $O(n \log n)$
 
 ```python
