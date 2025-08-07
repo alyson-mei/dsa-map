@@ -37,6 +37,7 @@
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
-		{"id":"098d84229e48f818","fromNode":"30c41d80592b44e8","fromSide":"bottom","toNode":"79f1928828b930cd","toSide":"top"}
+		{"id":"098d84229e48f818","fromNode":"30c41d80592b44e8","fromSide":"bottom","toNode":"79f1928828b930cd","toSide":"top"},
+		{"id":"096556ad1644f39b","fromNode":"6aa690f2b524dda5","fromSide":"right","toNode":"4d3f2c23eedb59ef","toSide":"left"}
 	]
 }
