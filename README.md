@@ -2,4 +2,4 @@
 DSA map (Obsidian)
 
 - Autocommits every minute
-- Links to Colab implementations
+- Links to Colab implementations / LeetCode problems
