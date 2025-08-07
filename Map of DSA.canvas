@@ -5,10 +5,10 @@
 		{"id":"79f1928828b930cd","type":"group","x":-3280,"y":1840,"width":2600,"height":760,"label":"Algorithms"},
 		{"id":"f02a160e094281b5","type":"group","x":-2680,"y":-560,"width":1400,"height":814,"label":"Definition and implementation"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-2190,"y":760,"width":670,"height":1000,"label":"Update / Delete"},
-		{"id":"2a94b59a164c0ba3","x":-2459,"y":1920,"width":1339,"height":480,"type":"group","label":"Patterns"},
+		{"id":"2a94b59a164c0ba3","x":-2459,"y":1920,"width":1339,"height":480,"type":"group","label":"Patterns: Arrays"},
 		{"id":"6aa690f2b524dda5","type":"group","x":-3280,"y":320,"width":980,"height":620,"label":"Local CRUD"},
 		{"id":"96a6e6e558c80c91","type":"group","x":-1440,"y":500,"width":680,"height":834,"label":"Read / Aggregate / Filter / etc."},
-		{"id":"a6ecb3cb0c7025b6","type":"group","x":-3240,"y":1920,"width":720,"height":400,"label":"Basic array algorithms"},
+		{"id":"a6ecb3cb0c7025b6","type":"group","x":-3240,"y":1920,"width":720,"height":400,"label":"Basic classes: Arrays"},
 		{"id":"19c50a914f307417","type":"group","x":-2190,"y":386,"width":670,"height":314,"label":"Create"},
 		{"id":"ce9a180332abed35","type":"text","text":"### Tuple","x":1690,"y":-320,"width":250,"height":60},
 		{"id":"b84e8ad8edb48fe4","type":"text","text":"### Set","x":2049,"y":-320,"width":250,"height":60},
@@ -31,7 +31,7 @@
 		{"id":"1b0a3f2961c3a69a","type":"text","text":"#### Добавление/удаление (create/delete)\n\n- `arr.append(elmnt)`\n- `x = arr.pop()` | `len(arr) > 0`\n- `arr.insert(pos, elmnt)`\n- `arr.pop(pos)` | `0 <= i < len(arr)`\n\n$O(1)$ в конец, $O(n)$ в общем случае","x":-2820,"y":340,"width":500,"height":280},
 		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n- Quadratic\n\t1) [[Selection sort]]\n\t2) [[Insertion sort]]\n\t3) [[Bubble sort]]\n- Quasilinear\n\t1) [[Merge sort]]\n\t2) [[Quicksort]]","x":-3220,"y":1940,"width":280,"height":280},
 		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- [[Bound binary search]]","x":-2900,"y":1940,"width":268,"height":220},
-		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n- Basic\n\t1) Remove duplicates\n\t2) Move zeros\n\t3) Merge two arrays\n\t4) \n- More advanced\n\t1) Maximums subarray sum (Kadane's algorithm)","x":-2439,"y":1940,"width":580,"height":440},
+		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n- Basic\n\t1) [Remove duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)\n\t2) Move zeros\n\t3) Merge two arrays\n\t4) \n- More advanced\n\t1) Maximums subarray sum (Kadane's algorithm)","x":-2439,"y":1940,"width":580,"height":440},
 		{"id":"08c132222f23920a","x":-1740,"y":1940,"width":600,"height":440,"type":"text","text":"### Sliding window\n\n"}
 	],
 	"edges":[
