@@ -1,8 +1,8 @@
 {
 	"nodes":[
-		{"id":"30c41d80592b44e8","x":-3320,"y":-640,"width":2680,"height":3680,"type":"group","label":"Array"},
-		{"id":"79f1928828b930cd","type":"group","x":-3280,"y":1840,"width":2600,"height":1120,"label":"Algorithms"},
+		{"id":"30c41d80592b44e8","x":-3320,"y":-640,"width":2680,"height":3160,"type":"group","label":"Array"},
 		{"id":"4d3f2c23eedb59ef","type":"group","x":-2240,"y":320,"width":1540,"height":1480,"label":"Global CRUD"},
+		{"id":"79f1928828b930cd","type":"group","x":-3280,"y":1840,"width":2600,"height":640,"label":"Algorithms"},
 		{"id":"f02a160e094281b5","type":"group","x":-2680,"y":-560,"width":1400,"height":814,"label":"Definition and implementation"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-2190,"y":760,"width":670,"height":1000,"label":"Update / Delete"},
 		{"id":"6aa690f2b524dda5","type":"group","x":-3280,"y":320,"width":980,"height":620,"label":"Local CRUD"},
@@ -31,7 +31,7 @@
 		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n1\\. Valid palindrome\n2\\. Maximums subarray sum (Kadane's algorithm)","x":-2360,"y":1920,"width":580,"height":440},
 		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n1) Quadratic\n\t- [[Selection sort]]\n\t- [[Insertion sort]]\n\t- [[Bubble sort]]\n2) Quasilinear\n\t- [[Merge sort]]\n\t- [[Quicksort]]","x":-3180,"y":1940,"width":280,"height":280},
 		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- [[Bound binary search]]","x":-2860,"y":1940,"width":268,"height":220},
-		{"id":"08c132222f23920a","x":-1657,"y":1982,"width":250,"height":60,"type":"text","text":"### Sliding window"}
+		{"id":"08c132222f23920a","x":-1720,"y":1920,"width":600,"height":440,"type":"text","text":"### Sliding window"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
