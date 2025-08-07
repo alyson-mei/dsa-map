@@ -31,7 +31,7 @@
 		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n1\\. Valid palindrome\n2\\. Maximums subarray sum (Kadane's algorithm)","x":-2360,"y":1920,"width":580,"height":440},
 		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n1) Quadratic\n\t- [[Selection sort]]\n\t- [[Insertion sort]]\n\t- [[Bubble sort]]\n2) Quasilinear\n\t- [[Merge sort]]\n\t- [[Quicksort]]","x":-3180,"y":1940,"width":280,"height":280},
 		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- [[Bound binary search]]","x":-2860,"y":1940,"width":268,"height":220},
-		{"id":"08c132222f23920a","x":-1657,"y":1982,"width":250,"height":60,"type":"text","text":"### Sl"}
+		{"id":"08c132222f23920a","x":-1657,"y":1982,"width":250,"height":60,"type":"text","text":"### Sliding window"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
