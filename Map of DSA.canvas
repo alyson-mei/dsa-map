@@ -33,7 +33,7 @@
 		{"id":"08c132222f23920a","type":"text","text":"### Sliding window\n\n","x":-1620,"y":1960,"width":600,"height":440},
 		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n- Basic\n\t1) [Reverse String](https://leetcode.com/problems/reverse-string/description/) (LC 344)\n\t2) [Sort array by parity](https://leetcode.com/problems/sort-array-by-parity/description/) (LC 905)\n\t3) [Remove duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) (LC 26)\n\t4) [Move zeroes](https://leetcode.com/problems/move-zeroes/description/) (LC 283)\n\t5) [Merge sorted arrays](https://leetcode.com/problems/merge-sorted-array/description/) (LC 88, closer to intermediate for in-place version) \n\t<br>\n- Intermediate \n\t1) [Sort colors](https://leetcode.com/problems/sort-colors/) (LC 75, Dutch National Flag algorithm)\n\t2) [Two sum in a sorted array](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) (LC 167)\n\t3) [Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) (LC 1498)","x":-2439,"y":1960,"width":720,"height":440},
 		{"id":"ce9a180332abed35","type":"text","text":"### Tuple","x":-1300,"y":-532,"width":520,"height":482},
-		{"id":"213c57472ff05455","type":"text","text":"### String\n","x":-2380,"y":-532,"width":440,"height":482}
+		{"id":"213c57472ff05455","type":"text","text":"### String\n\nМассив байтов с завершающим `\\0` или с дополнительной метаинформацией\n```c\nchar *s = \"hello\";\n```\n```python \n```","x":-2380,"y":-532,"width":440,"height":482}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
