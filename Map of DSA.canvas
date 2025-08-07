@@ -1,13 +1,14 @@
 {
 	"nodes":[
-		{"id":"30c41d80592b44e8","x":-3320,"y":-640,"width":2680,"height":3160,"type":"group","label":"Array"},
+		{"id":"30c41d80592b44e8","x":-3320,"y":-640,"width":2680,"height":3280,"type":"group","label":"Array"},
 		{"id":"4d3f2c23eedb59ef","type":"group","x":-2240,"y":320,"width":1540,"height":1480,"label":"Global CRUD"},
-		{"id":"79f1928828b930cd","type":"group","x":-3280,"y":1840,"width":2600,"height":640,"label":"Algorithms"},
+		{"id":"79f1928828b930cd","type":"group","x":-3280,"y":1840,"width":2600,"height":760,"label":"Algorithms"},
 		{"id":"f02a160e094281b5","type":"group","x":-2680,"y":-560,"width":1400,"height":814,"label":"Definition and implementation"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-2190,"y":760,"width":670,"height":1000,"label":"Update / Delete"},
+		{"id":"2a94b59a164c0ba3","x":-2459,"y":1920,"width":1339,"height":480,"type":"group","label":"Patterns"},
 		{"id":"6aa690f2b524dda5","type":"group","x":-3280,"y":320,"width":980,"height":620,"label":"Local CRUD"},
 		{"id":"96a6e6e558c80c91","type":"group","x":-1440,"y":500,"width":680,"height":834,"label":"Read / Aggregate / Filter / etc."},
-		{"id":"a6ecb3cb0c7025b6","type":"group","x":-3240,"y":1920,"width":720,"height":400,"label":"Basic algorithms"},
+		{"id":"a6ecb3cb0c7025b6","type":"group","x":-3240,"y":1920,"width":720,"height":400,"label":"Basic array algorithms"},
 		{"id":"19c50a914f307417","type":"group","x":-2190,"y":386,"width":670,"height":314,"label":"Create"},
 		{"id":"ce9a180332abed35","type":"text","text":"### Tuple","x":1690,"y":-320,"width":250,"height":60},
 		{"id":"b84e8ad8edb48fe4","type":"text","text":"### Set","x":2049,"y":-320,"width":250,"height":60},
@@ -28,10 +29,10 @@
 		{"id":"f9ded7ac3a07b0d4","type":"text","text":"#### Доступ по индексу (read/update)\n- `x = arr[i]` | `0 <= i < len(arr)`\n- `arr[i] = 17` | `0 <= i < len(arr)`\n\n**Замечание**:\n- Можно использовать отрицательные (syntactic sugar)\n\n$O(1)$","x":-3260,"y":340,"width":400,"height":280},
 		{"id":"3ab0bcbe9839b995","type":"text","text":"#### Итерирование\n```python\nfor i in range(start, stop, step):\n\t...\nfor elmnt in arr:\n\t...\n```\n\n$O(n)$","x":-3260,"y":640,"width":400,"height":240},
 		{"id":"1b0a3f2961c3a69a","type":"text","text":"#### Добавление/удаление (create/delete)\n\n- `arr.append(elmnt)`\n- `x = arr.pop()` | `len(arr) > 0`\n- `arr.insert(pos, elmnt)`\n- `arr.pop(pos)` | `0 <= i < len(arr)`\n\n$O(1)$ в конец, $O(n)$ в общем случае","x":-2820,"y":340,"width":500,"height":280},
-		{"id":"08c132222f23920a","x":-1720,"y":1920,"width":600,"height":440,"type":"text","text":"### Sliding window\n\n"},
-		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n- Quadratic\n\t1) [[Selection sort]]\n\t2) [[Insertion sort]]\n\t3) [[Bubble sort]]\n2. Quasilinear\n\t1) [[Merge sort]]\n\t2) [[Quicksort]]","x":-3220,"y":1940,"width":280,"height":280},
+		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n1. Quadratic\n\t1) [[Selection sort]]\n\t2) [[Insertion sort]]\n\t3) [[Bubble sort]]\n2. Quasilinear\n\t1) [[Merge sort]]\n\t2) [[Quicksort]]","x":-3220,"y":1940,"width":280,"height":280},
 		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- [[Bound binary search]]","x":-2900,"y":1940,"width":268,"height":220},
-		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n1. One-pass\n\t1) Valid palindrome\n2\\. Maximums subarray sum (Kadane's algorithm)","x":-2440,"y":1920,"width":580,"height":440}
+		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n1. One-pass\n\t1) Valid palindrom\n\t2) Maximums subarray sum (Kadane's algorithm)","x":-2439,"y":1940,"width":580,"height":440},
+		{"id":"08c132222f23920a","x":-1740,"y":1940,"width":600,"height":440,"type":"text","text":"### Sliding window\n\n"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
