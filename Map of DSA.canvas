@@ -28,10 +28,10 @@
 		{"id":"f9ded7ac3a07b0d4","type":"text","text":"#### Доступ по индексу (read/update)\n- `x = arr[i]` | `0 <= i < len(arr)`\n- `arr[i] = 17` | `0 <= i < len(arr)`\n\n**Замечание**:\n- Можно использовать отрицательные (syntactic sugar)\n\n$O(1)$","x":-3260,"y":340,"width":400,"height":280},
 		{"id":"3ab0bcbe9839b995","type":"text","text":"#### Итерирование\n```python\nfor i in range(start, stop, step):\n\t...\nfor elmnt in arr:\n\t...\n```\n\n$O(n)$","x":-3260,"y":640,"width":400,"height":240},
 		{"id":"1b0a3f2961c3a69a","type":"text","text":"#### Добавление/удаление (create/delete)\n\n- `arr.append(elmnt)`\n- `x = arr.pop()` | `len(arr) > 0`\n- `arr.insert(pos, elmnt)`\n- `arr.pop(pos)` | `0 <= i < len(arr)`\n\n$O(1)$ в конец, $O(n)$ в общем случае","x":-2820,"y":340,"width":500,"height":280},
-		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n1\\. Valid palindrome\n2\\. Maximums subarray sum (Kadane's algorithm)","x":-2360,"y":1920,"width":580,"height":440},
-		{"id":"08c132222f23920a","x":-1720,"y":1920,"width":600,"height":440,"type":"text","text":"### Sliding window"},
+		{"id":"08c132222f23920a","x":-1720,"y":1920,"width":600,"height":440,"type":"text","text":"### Sliding window\n\n"},
 		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n1) Quadratic\n\t- [[Selection sort]]\n\t- [[Insertion sort]]\n\t- [[Bubble sort]]\n2) Quasilinear\n\t- [[Merge sort]]\n\t- [[Quicksort]]","x":-3220,"y":1940,"width":280,"height":280},
-		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- [[Bound binary search]]","x":-2900,"y":1940,"width":268,"height":220}
+		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- [[Bound binary search]]","x":-2900,"y":1940,"width":268,"height":220},
+		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n1\\. Valid palindrome\n2\\. Maximums subarray sum (Kadane's algorithm)","x":-2440,"y":1920,"width":580,"height":440}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"}
