@@ -4,7 +4,7 @@
 		{"id":"4d3f2c23eedb59ef","type":"group","x":-2680,"y":140,"width":1540,"height":1480,"label":"Global CRUD"},
 		{"id":"f02a160e094281b5","type":"group","x":-3720,"y":-760,"width":2580,"height":840,"label":"Definition and implementation"},
 		{"id":"79f1928828b930cd","type":"group","x":-3320,"y":2040,"width":2360,"height":760,"label":"Algorithms: Arrays"},
-		{"id":"41ba00db0b6cc136","x":-860,"y":2040,"width":1340,"height":760,"type":"group","label":"Algorithms: Set & Dict"},
+		{"id":"41ba00db0b6cc136","x":-860,"y":2040,"width":1340,"height":800,"type":"group","label":"Algorithms: Set & Dict"},
 		{"id":"3265595402f90c17","type":"group","x":-3720,"y":820,"width":960,"height":840,"label":"String and tuple methods"},
 		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":480,"label":"Patterns: Arrays"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-2630,"y":580,"width":670,"height":1000,"label":"Update / Delete"},
@@ -38,8 +38,8 @@
 		{"id":"11005d1913a0d8b1","type":"text","text":"### Hashmap","x":1871,"y":-640,"width":250,"height":60},
 		{"id":"ce9a180332abed35","type":"text","text":"### Tuple\n\nКортеж (tuple) - незименяемая упорядоченная коллекция в Python\n\n`print(t1 + t2)`\n\n- Кортеж может содержать изменяемые элементы, но сам всё равно счтается неизменяемым\n- Немного быстрее списков при итерировании\n- Реализует `__hash__`, но не хэшируем, если содержит изменяемые элементы\n- Применяется в качестве элементов множества / ключей словаря","x":-2880,"y":-732,"width":810,"height":772},
 		{"id":"213c57472ff05455","type":"text","text":"### String\n\nМассив байтов с завершающим `\\0` или с дополнительной метаинформацией\n```c\n// Массив симвоболов (char[]) с \\0 в конце\nchar *s = \"hello\";\n```\n```python \n# Реализация CPython хранит строку в виде структуры PyUnicodeObject\ns = \"hello\"\n```\n\nОтличия: \n- Тип элементов - символы (чаще всего `char`)\n- Неизменяемость\n- Специальная семантика (поддержка конкатенации, поиска и т.п.)\n- Оптимизации в компиляторах/интерпретаторах\n\nВ Python реализуют метод `__hash__`, всегда хэшируемые","x":-2040,"y":-732,"width":735,"height":772},
-		{"id":"7fced196745814a3","x":-620,"y":2140,"width":250,"height":60,"type":"text","text":""},
-		{"id":"f5b57f663f61f148","x":-370,"y":2220,"width":250,"height":60,"type":"text","text":""}
+		{"id":"7fced196745814a3","x":-820,"y":2080,"width":320,"height":380,"type":"text","text":""},
+		{"id":"f5b57f663f61f148","x":-420,"y":2080,"width":250,"height":60,"type":"text","text":""}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
