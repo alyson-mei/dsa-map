@@ -30,7 +30,7 @@
 		{"id":"e6aa1ea649c5dc75","type":"text","text":"#### Concatenation\n- `arr1 + arr2`\n\n$O(\\textrm{len}(\\textrm{arr2}))$","x":-2240,"y":226,"width":230,"height":154},
 		{"id":"72a7a8461b6fbd4d","type":"text","text":"#### Поиск\n- `elmnt in arr`\n- `arr.index()` - исключение, если нет элемента\n- `arr.count(elmnt)` - подсчёт количества вхождений\n\n$O(n)$\n\n\\+ bisect - для бинарного поиска: $O(nlogn)$","x":-1860,"y":340,"width":640,"height":254},
 		{"id":"fe1824679faa31ac","type":"text","text":"#### Фильтрация\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":-1860,"y":954,"width":640,"height":160},
-		{"id":"c7b550e6a92b91b5","type":"text","text":"### Tuple methods\ntest1231233","x":-3700,"y":1280,"width":920,"height":340},
+		{"id":"c7b550e6a92b91b5","type":"text","text":"### Tuple methods\n`count(x)`, `index(x[, start,`","x":-3700,"y":1280,"width":920,"height":340},
 		{"id":"b5966777f4aa3896","type":"text","text":"#### Map\n`arr = list(map(int, input().split()))`","x":-2610,"y":400,"width":594,"height":100},
 		{"id":"be51c1c38eb3c224","type":"text","text":"#### Агрегация\n\n- `sum(arr)` \n- `min(arr)`, `max(arr)`\n- `all(lst)`, `any(lst)` - конъюнкция/дизъюнкция\n\n```python\nimport statistics\nstatistics.mean(lst)   \nstatistics.median(lst)   \nstatistics.mode(lst)   \nstatistics.stdev(lst)\n\n```","x":-1860,"y":614,"width":640,"height":323},
 		{"id":"b84e8ad8edb48fe4","type":"text","text":"### Set","x":1480,"y":-640,"width":250,"height":60},
