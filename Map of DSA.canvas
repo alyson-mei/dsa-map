@@ -35,7 +35,7 @@
 		{"id":"be51c1c38eb3c224","type":"text","text":"#### Агрегация\n\n- `sum(arr)` \n- `min(arr)`, `max(arr)`\n- `all(lst)`, `any(lst)` - конъюнкция/дизъюнкция\n\n```python\nimport statistics\nstatistics.mean(lst)   \nstatistics.median(lst)   \nstatistics.mode(lst)   \nstatistics.stdev(lst)\n\n```","x":-1860,"y":614,"width":640,"height":323},
 		{"id":"b84e8ad8edb48fe4","type":"text","text":"### Set","x":1480,"y":-640,"width":250,"height":60},
 		{"id":"11005d1913a0d8b1","type":"text","text":"### Hashmap","x":1871,"y":-640,"width":250,"height":60},
-		{"id":"ce9a180332abed35","type":"text","text":"### Tuple","x":-2880,"y":-732,"width":810,"height":772},
+		{"id":"ce9a180332abed35","type":"text","text":"### Tuple\n\n`tuple` - незименяемая уопрядоченная коллекция в python\n\n`print(t1 + t2`","x":-2880,"y":-732,"width":810,"height":772},
 		{"id":"213c57472ff05455","type":"text","text":"### String\n\nМассив байтов с завершающим `\\0` или с дополнительной метаинформацией\n```c\n// Массив симвоболов (char[]) с \\0 в конце\nchar *s = \"hello\";\n```\n```python \n# Реализация CPython хранит строку в виде структуры PyUnicodeObject\ns = \"hello\"\n```\n\nОтличия: \n- Тип элементов - символы (чаще всего `char`)\n- Неизменяемость\n- Специальная семантика (поддержка конкатенации, поиска и т.п.)\n- Оптимизации в компиляторах/интерпретаторах\n\nВ python реализует метод `__hash__`, всегда хэшируемые","x":-2040,"y":-732,"width":735,"height":772}
 	],
 	"edges":[
