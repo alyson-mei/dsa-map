@@ -40,8 +40,8 @@
 		{"id":"11005d1913a0d8b1","type":"text","text":"### Hashmap","x":1871,"y":-640,"width":250,"height":60},
 		{"id":"f5b57f663f61f148","type":"text","text":"### Dict\n\n- Basic\n\t1) [Two Sum](https://leetcode.com/problems/two-sum/) (LC 1)\n\t2)  [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) (LC 387)\n\t3) [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) (LC 1207)\n\t4) [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) (LC 219)\n\t5) [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) (LC 451)\n\t<br>\n- Intermediate\n\t1) [Group Anagrams](https://leetcode.com/problems/group-anagrams/) (LC 49)","x":-340,"y":2080,"width":520,"height":460},
 		{"id":"7fced196745814a3","type":"text","text":"### Set\n- Basic\n\t1) [Contains duplicate](https://leetcode.com/problems/contains-duplicate/) (LC 217)\n\t2) [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/) (LC 349)\n\t3) [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) (LC 242)\n\t<br>\n- Intermediate\n\t1) [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) (LC 3)","x":-800,"y":2080,"width":440,"height":380},
-		{"id":"ec8cfa4201a8381c","x":-499,"y":-721,"width":339,"height":141,"type":"text","text":"### Dict (HashMap)"},
-		{"id":"6aea982c069e0a85","x":-840,"y":-732,"width":250,"height":112,"type":"text","text":"### Set (HashSet)"}
+		{"id":"6aea982c069e0a85","x":-840,"y":-732,"width":250,"height":112,"type":"text","text":"### Set (HashSet)"},
+		{"id":"ec8cfa4201a8381c","x":-500,"y":-732,"width":339,"height":141,"type":"text","text":"### Dict (HashMap)"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
