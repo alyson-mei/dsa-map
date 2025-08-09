@@ -1,12 +1,12 @@
 {
 	"nodes":[
 		{"id":"30c41d80592b44e8","type":"group","x":-3760,"y":-840,"width":2680,"height":2520,"label":"Arrays (and array-based DS)"},
+		{"id":"79f1928828b930cd","type":"group","x":-3320,"y":2040,"width":2360,"height":760,"label":"Algorithms: Arrays"},
+		{"id":"41ba00db0b6cc136","type":"group","x":-860,"y":2040,"width":1340,"height":800,"label":"Algorithms: Set & Dict"},
+		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":480,"label":"Patterns: Arrays"},
 		{"id":"4d3f2c23eedb59ef","type":"group","x":-2680,"y":140,"width":1540,"height":1480,"label":"Global CRUD"},
 		{"id":"f02a160e094281b5","type":"group","x":-3720,"y":-760,"width":2580,"height":840,"label":"Definition and implementation"},
-		{"id":"79f1928828b930cd","type":"group","x":-3320,"y":2040,"width":2360,"height":760,"label":"Algorithms: Arrays"},
-		{"id":"41ba00db0b6cc136","x":-860,"y":2040,"width":1340,"height":800,"type":"group","label":"Algorithms: Set & Dict"},
 		{"id":"3265595402f90c17","type":"group","x":-3720,"y":820,"width":960,"height":840,"label":"String and tuple methods"},
-		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":480,"label":"Patterns: Arrays"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-2630,"y":580,"width":670,"height":1000,"label":"Update / Delete"},
 		{"id":"6aa690f2b524dda5","type":"group","x":-3720,"y":140,"width":980,"height":620,"label":"Local CRUD"},
 		{"id":"96a6e6e558c80c91","type":"group","x":-1880,"y":320,"width":680,"height":834,"label":"Read / Aggregate / Filter / etc."},
@@ -20,7 +20,6 @@
 		{"id":"b092bb7521a909c1","type":"text","text":"#### Sorting\n- Quadratic\n\t1) [[Selection sort]]\n\t2) [[Insertion sort]]\n\t3) [[Bubble sort]]\n- Quasilinear\n\t1) [[Merge sort]]\n\t2) [[Quicksort]]","x":-3260,"y":2140,"width":280,"height":280},
 		{"id":"d3236cbe9239b76e","type":"text","text":"#### Search\n- [[Linear search]]\n- [[Binary search]]\n- [[Jump search]]\n- [[Bound binary search]]","x":-2940,"y":2140,"width":268,"height":220},
 		{"id":"d6b2b253f95f8432","type":"text","text":"- Intermediate\n\t1) [Maximums subarray](https://leetcode.com/problems/maximum-subarray/) (Kadane's algorithm)","x":-3260,"y":2540,"width":460,"height":180},
-		{"id":"08c132222f23920a","type":"text","text":"### Sliding window\n\n","x":-1660,"y":2140,"width":600,"height":440},
 		{"id":"b59286bfd7dea154","type":"text","text":"### Two pointers\n\n- Basic\n\t1) [Reverse String](https://leetcode.com/problems/reverse-string/description/) (LC 344)\n\t2) [Sort array by parity](https://leetcode.com/problems/sort-array-by-parity/description/) (LC 905)\n\t3) [Remove duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) (LC 26)\n\t4) [Move zeroes](https://leetcode.com/problems/move-zeroes/description/) (LC 283)\n\t5) [Merge sorted arrays](https://leetcode.com/problems/merge-sorted-array/description/) (LC 88, closer to intermediate for in-place version) \n\t<br>\n- Intermediate \n\t1) [Sort colors](https://leetcode.com/problems/sort-colors/) (LC 75, Dutch National Flag algorithm)\n\t2) [Two sum in a sorted array](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) (LC 167)\n\t3) [Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) (LC 1498)","x":-2479,"y":2140,"width":720,"height":440},
 		{"id":"f9ded7ac3a07b0d4","type":"text","text":"#### Доступ по индексу (read/update)\n- `x = arr[i]` | `0 <= i < len(arr)`\n- `arr[i] = 17` | `0 <= i < len(arr)`\n\n**Замечание**:\n- Можно использовать отрицательные (syntactic sugar)\n\n$O(1)$","x":-3700,"y":160,"width":400,"height":280},
 		{"id":"84696f3096501891","type":"text","text":"#### Sorting\n\n- `arr.sort(reverse, key)`\n- `new_arr = sorted(arr, reverse, key)`\n\n**Сортировки** (по умолчанию non-decreasing order):\n1. Квадратичные $(O(n^2))$\n\t- Выбором: находим минимальный элемент, меняем его с первым из неотсортированной части\n\t- Вставками: размещаем новый элемент в правильное место в отсортированной части\n\t- Пузырьком: *цепляем* максимальный элемент неотсортированной части, переносим в конец\n2. Квазилинейная $(O(nlogn))$\n\t- Merge sort (слиянием): массив разбивается на две части, каждая сортируется отдельно, \n\t- Quicksort (\"быстрая\")","x":-2589,"y":1000,"width":573,"height":560},
@@ -38,8 +37,9 @@
 		{"id":"11005d1913a0d8b1","type":"text","text":"### Hashmap","x":1871,"y":-640,"width":250,"height":60},
 		{"id":"ce9a180332abed35","type":"text","text":"### Tuple\n\nКортеж (tuple) - незименяемая упорядоченная коллекция в Python\n\n`print(t1 + t2)`\n\n- Кортеж может содержать изменяемые элементы, но сам всё равно счтается неизменяемым\n- Немного быстрее списков при итерировании\n- Реализует `__hash__`, но не хэшируем, если содержит изменяемые элементы\n- Применяется в качестве элементов множества / ключей словаря","x":-2880,"y":-732,"width":810,"height":772},
 		{"id":"213c57472ff05455","type":"text","text":"### String\n\nМассив байтов с завершающим `\\0` или с дополнительной метаинформацией\n```c\n// Массив симвоболов (char[]) с \\0 в конце\nchar *s = \"hello\";\n```\n```python \n# Реализация CPython хранит строку в виде структуры PyUnicodeObject\ns = \"hello\"\n```\n\nОтличия: \n- Тип элементов - символы (чаще всего `char`)\n- Неизменяемость\n- Специальная семантика (поддержка конкатенации, поиска и т.п.)\n- Оптимизации в компиляторах/интерпретаторах\n\nВ Python реализуют метод `__hash__`, всегда хэшируемые","x":-2040,"y":-732,"width":735,"height":772},
-		{"id":"7fced196745814a3","x":-820,"y":2080,"width":440,"height":380,"type":"text","text":"### Set\n\n- Basic\n\t1) [Contains duplicate](https://leetcode.com/problems/contains-duplicate/) (LC 217)\n\t2) [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/) (LC 349)\n\t3) [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) (LC 242)"},
-		{"id":"f5b57f663f61f148","x":-340,"y":2080,"width":460,"height":380,"type":"text","text":"### Dict"}
+		{"id":"7fced196745814a3","type":"text","text":"### Set\n\n- Basic\n\t1) [Contains duplicate](https://leetcode.com/problems/contains-duplicate/) (LC 217)\n\t2) [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/) (LC 349)\n\t3) [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) (LC 242)\n<br>\n- Intermediate\n\t1)  [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) (LC 3)","x":-820,"y":2080,"width":440,"height":380},
+		{"id":"f5b57f663f61f148","type":"text","text":"### Dict","x":-340,"y":2080,"width":460,"height":380},
+		{"id":"08c132222f23920a","type":"text","text":"### Sliding window\n\n","x":-1660,"y":2140,"width":600,"height":440}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
