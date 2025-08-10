@@ -40,12 +40,15 @@
 		{"id":"44e18d46d0d7b999","type":"text","text":"### Array\n\n- **Тип**: `type(array)` -> smth like `Array<Int>`\n- **Длина**: `len(array)`\n\n**Предполагаем**:\n- Динамичность по запросу\n- Тип Any по умолчанию\n- Заполнен некоторыми значениями при создании\n\n#### Реализация\n\nНепрерывный блок памяти, в котором хранятся\na) объекты одного размера (для статических массивов)\nб) указатели на объекты (для динамических массивов)\n\n**Статический массив(C style)**\n`int arr[5] = {1, 2, 3, 4, 5};`\n\n**Динамический массив (\"Vector\", Python list, Java ArrayList)**\nРеализуется как:\n\n- Буфер (array) – выделенный блок памяти определённой ёмкости.\n    \n- Размер (size) – фактическое количество элементов.\n    \n- Ёмкость (capacity) – сколько элементов может влезть без перевыделения.\n    \n\nКогда массив заполняется:\n\n1. Выделяется новый блок памяти (обычно увеличенный в 1.5–2 раза).\n    \n2. Старые элементы копируются ($O(n)$).\n    \n3. Новый элемент добавляется.","x":-3680,"y":-732,"width":780,"height":792},
 		{"id":"ce9a180332abed35","type":"text","text":"### Tuple\n\nКортеж (tuple) - незименяемая упорядоченная коллекция в Python\n\n`print(t1 + t2)`\n\n- Кортеж может содержать изменяемые элементы, но сам всё равно счтается неизменяемым\n- Немного быстрее списков при итерировании\n- Реализует `__hash__`, но не хэшируем, если содержит изменяемые элементы\n- Применяется в качестве элементов множества / ключей словаря","x":-2880,"y":-732,"width":810,"height":772},
 		{"id":"6aea982c069e0a85","type":"text","text":"### Set (HashSet)\n\n- **Хэш-таблица** с **открытой адресацией** (open adressing) и **линейным пробингом** (linear probing)\n- Хранит **только ключи** (значение фиктивное)\n\n```python\ns = set()\ns = {1, 4, 9, 16}\n```","x":-880,"y":-788,"width":560,"height":328},
-		{"id":"ec8cfa4201a8381c","type":"text","text":"### Dict (HashMap)\n- **Хэш-таблица** с **открытой адресацией** (open adressing) и **линейным пробингом** (linear probing)\n- Хранит **ключи и значения**\n\n```python\nd = {}\nd = {1: 1, 2: 4, 3: 9, 4: 16}\n```","x":-280,"y":-788,"width":590,"height":328}
+		{"id":"ec8cfa4201a8381c","type":"text","text":"### Dict (HashMap)\n- **Хэш-таблица** с **открытой адресацией** (open adressing) и **линейным пробингом** (linear probing)\n- Хранит **ключи и значения**\n\n```python\nd = {}\nd = {1: 1, 2: 4, 3: 9, 4: 16}\n```","x":-280,"y":-788,"width":590,"height":328},
+		{"id":"da92375ab5ddd86b","x":-660,"y":-380,"width":760,"height":266,"type":"text","text":"### Имплементация\n\nОбе стру"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
 		{"id":"098d84229e48f818","fromNode":"30c41d80592b44e8","fromSide":"bottom","toNode":"79f1928828b930cd","toSide":"top"},
 		{"id":"096556ad1644f39b","fromNode":"6aa690f2b524dda5","fromSide":"right","toNode":"4d3f2c23eedb59ef","toSide":"left","toEnd":"none"},
-		{"id":"275fbd97efa4c415","fromNode":"cf14f2fa1bb1d26b","fromSide":"bottom","toNode":"41ba00db0b6cc136","toSide":"top"}
+		{"id":"275fbd97efa4c415","fromNode":"cf14f2fa1bb1d26b","fromSide":"bottom","toNode":"41ba00db0b6cc136","toSide":"top"},
+		{"id":"23545b1b1dd3f0f4","fromNode":"6aea982c069e0a85","fromSide":"bottom","toNode":"da92375ab5ddd86b","toSide":"top"},
+		{"id":"eab2842bbaa6d22b","fromNode":"ec8cfa4201a8381c","fromSide":"bottom","toNode":"da92375ab5ddd86b","toSide":"top"}
 	]
 }
