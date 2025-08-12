@@ -2,12 +2,12 @@
 	"nodes":[
 		{"id":"30c41d80592b44e8","type":"group","x":-3760,"y":-840,"width":2680,"height":2520,"label":"Arrays (and array-like DS)"},
 		{"id":"cf14f2fa1bb1d26b","type":"group","x":-920,"y":-840,"width":1780,"height":2520,"label":"Hash-based DS"},
+		{"id":"37ebefee8b531617","x":1040,"y":-752,"width":1620,"height":2432,"type":"group","label":"Stack, queue, deque"},
 		{"id":"a46905c43a9461a0","x":-900,"y":-760,"width":1740,"height":1463,"type":"group","label":"Definition and implementation"},
 		{"id":"4d3f2c23eedb59ef","type":"group","x":-2680,"y":140,"width":1540,"height":1480,"label":"Global CRUD"},
 		{"id":"f02a160e094281b5","type":"group","x":-3720,"y":-760,"width":2580,"height":840,"label":"Definition and implementation"},
 		{"id":"79f1928828b930cd","type":"group","x":-3320,"y":2040,"width":2360,"height":760,"label":"Algorithms: Arrays"},
 		{"id":"cc2567c20622eff7","x":-880,"y":780,"width":1700,"height":840,"type":"group","label":"Methods"},
-		{"id":"37ebefee8b531617","x":1040,"y":-752,"width":1620,"height":792,"type":"group","label":"Stack, queue, deque"},
 		{"id":"41ba00db0b6cc136","type":"group","x":-880,"y":2040,"width":1340,"height":800,"label":"Algorithms: Set & Dict"},
 		{"id":"3265595402f90c17","type":"group","x":-3720,"y":820,"width":960,"height":840,"label":"String and tuple methods"},
 		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":480,"label":"Patterns: Arrays"},
