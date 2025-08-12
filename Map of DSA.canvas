@@ -53,7 +53,7 @@
 		{"id":"b3256aa7b7e4f503","x":1580,"y":-732,"width":460,"height":452,"type":"text","text":"#### Queue\n\n**FIFO (First-In-First-Out)** data structure\n\n**Methods**:\n\n- Enqueue -> add element to rear\n- Dequeue -> remove element from front\n- Peek -> look at front without removing"},
 		{"id":"23b231db8607a243","x":2080,"y":-732,"width":560,"height":452,"type":"text","text":"#### Deque\n\n**Double-ended queue**, allows insertion/removal from both ends efficiently\n\n**Methods**:\n\n|Operation|Method|Time Complexity|\n|---|---|---|\n|Append right|`append(x)`|O(1)|\n|Append left|`appendleft(x)`|O(1)|\n|Pop right|`pop()`|O(1)|\n|Pop left|`popleft()`|O(1)|\n|Extend right|`extend(iterable)`|O(k)|\n|Extend left|`extendleft(iterable)`|O(k)|\n|Rotate|`rotate(n)`|O(k)|"},
 		{"id":"77d28977a68e8910","x":1220,"y":-160,"width":1290,"height":160,"type":"text","text":"#### Implementation\nUsing dynamic arrays with API restriction and maybe some optimization"},
-		{"id":"6eacf8f9ffe42548","x":1101,"y":2101,"width":419,"height":379,"type":"text","text":"#### Stack\n\n- Basic\n\t1) [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (LC 20)\n\t<br>\n- Intermediate\n- [Min Stack](https://leetcode.com/problems/min-stack/)\n"},
+		{"id":"6eacf8f9ffe42548","x":1101,"y":2101,"width":419,"height":379,"type":"text","text":"#### Stack\n\n- Basic\n\t1) [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (LC 20)\n\t<br>\n- Intermediate\n 1[Min Stack](https://leetcode.com/problems/min-stack/)\n"},
 		{"id":"e58109d2af888b43","x":1580,"y":2101,"width":400,"height":259,"type":"text","text":"#### Queue"},
 		{"id":"67602273a09e6cba","x":2020,"y":2101,"width":440,"height":259,"type":"text","text":"#### Deque"}
 	],
