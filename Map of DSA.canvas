@@ -8,6 +8,7 @@
 		{"id":"f02a160e094281b5","type":"group","x":-3720,"y":-760,"width":2580,"height":840,"label":"Definition and implementation"},
 		{"id":"79f1928828b930cd","type":"group","x":-3320,"y":2040,"width":2360,"height":760,"label":"Algorithms: Arrays"},
 		{"id":"cc2567c20622eff7","x":-880,"y":780,"width":1700,"height":840,"type":"group","label":"Methods"},
+		{"id":"e4c78baace2debee","x":920,"y":2040,"width":1620,"height":760,"type":"group","label":"Untitled group"},
 		{"id":"41ba00db0b6cc136","type":"group","x":-880,"y":2040,"width":1340,"height":800,"label":"Algorithms: Set & Dict"},
 		{"id":"3265595402f90c17","type":"group","x":-3720,"y":820,"width":960,"height":840,"label":"String and tuple methods"},
 		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":480,"label":"Patterns: Arrays"},
@@ -51,7 +52,9 @@
 		{"id":"5ec1fb0b7ca99cb2","x":1060,"y":-732,"width":460,"height":452,"type":"text","text":"#### Stack\n\n**LIFO (Last-In-First-Out)** data structure\n\n**Methods**:\n- Push -> add element to top\n- Pop -> remove element from top\n- Peek -> look at top without removing\n\n"},
 		{"id":"b3256aa7b7e4f503","x":1580,"y":-732,"width":460,"height":452,"type":"text","text":"#### Queue\n\n**FIFO (First-In-First-Out)** data structure\n\n**Methods**:\n\n- Enqueue -> add element to rear\n- Dequeue -> remove element from front\n- Peek -> look at front without removing"},
 		{"id":"23b231db8607a243","x":2080,"y":-732,"width":560,"height":452,"type":"text","text":"#### Deque\n\n**Double-ended queue**, allows insertion/removal from both ends efficiently\n\n**Methods**:\n\n|Operation|Method|Time Complexity|\n|---|---|---|\n|Append right|`append(x)`|O(1)|\n|Append left|`appendleft(x)`|O(1)|\n|Pop right|`pop()`|O(1)|\n|Pop left|`popleft()`|O(1)|\n|Extend right|`extend(iterable)`|O(k)|\n|Extend left|`extendleft(iterable)`|O(k)|\n|Rotate|`rotate(n)`|O(k)|"},
-		{"id":"77d28977a68e8910","x":1220,"y":-160,"width":1290,"height":160,"type":"text","text":"#### Implementation\nUsing dynamic arrays with API restriction and maybe some optimization"}
+		{"id":"77d28977a68e8910","x":1220,"y":-160,"width":1290,"height":160,"type":"text","text":"#### Implementation\nUsing dynamic arrays with API restriction and maybe some optimization"},
+		{"id":"6eacf8f9ffe42548","x":1101,"y":2131,"width":250,"height":60,"type":"text","text":""},
+		{"id":"e58109d2af888b43","x":1394,"y":2077,"width":250,"height":60,"type":"text","text":""}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
@@ -63,6 +66,7 @@
 		{"id":"2c462e24d801d225","fromNode":"da92375ab5ddd86b","fromSide":"right","toNode":"7f8fb029aba1122e","toSide":"left"},
 		{"id":"d1450ef9cb6085f2","fromNode":"5ec1fb0b7ca99cb2","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"},
 		{"id":"b8e4bf25131424b2","fromNode":"b3256aa7b7e4f503","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"},
-		{"id":"638360f38de30f45","fromNode":"23b231db8607a243","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"}
+		{"id":"638360f38de30f45","fromNode":"23b231db8607a243","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"},
+		{"id":"263ade6ab9e4298f","fromNode":"37ebefee8b531617","fromSide":"bottom","toNode":"e58109d2af888b43","toSide":"top"}
 	]
 }
