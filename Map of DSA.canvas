@@ -16,6 +16,7 @@
 		{"id":"a6ecb3cb0c7025b6","type":"group","x":-3280,"y":2120,"width":720,"height":340,"label":"Basic classes: Arrays"},
 		{"id":"19c50a914f307417","type":"group","x":-2630,"y":206,"width":670,"height":314,"label":"Create"},
 		{"id":"633aa69370a5f45f","type":"group","x":-3280,"y":2520,"width":500,"height":240,"label":"Other: Arrays"},
+		{"id":"37ebefee8b531617","x":1040,"y":-752,"width":1620,"height":368,"type":"group","label":"Untitled group"},
 		{"id":"fe1824679faa31ac","type":"text","text":"#### Фильтрация\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":-1860,"y":954,"width":640,"height":160},
 		{"id":"be51c1c38eb3c224","type":"text","text":"#### Агрегация\n\n- `sum(arr)` \n- `min(arr)`, `max(arr)`\n- `all(lst)`, `any(lst)` - конъюнкция/дизъюнкция\n\n```python\nimport statistics\nstatistics.mean(lst)   \nstatistics.median(lst)   \nstatistics.mode(lst)   \nstatistics.stdev(lst)\n\n```","x":-1860,"y":614,"width":640,"height":323},
 		{"id":"72a7a8461b6fbd4d","type":"text","text":"#### Поиск\n- `elmnt in arr`\n- `arr.index()` - исключение, если нет элемента\n- `arr.count(elmnt)` - подсчёт количества вхождений\n\n$O(n)$\n\n\\+ bisect - для бинарного поиска: $O(nlogn)$","x":-1860,"y":340,"width":640,"height":254},
@@ -47,8 +48,9 @@
 		{"id":"3ab0bcbe9839b995","type":"text","text":"#### Итерирование\n```python\nfor i in range(start, stop, step):\n\t...\nfor elmnt in arr:\n\t...\n```\n\n$O(n)$","x":-3700,"y":460,"width":400,"height":260},
 		{"id":"1b0a3f2961c3a69a","type":"text","text":"#### Добавление/удаление (create/delete)\n\n- `arr.append(elmnt)`\n- `x = arr.pop()` | `len(arr) > 0`\n- `arr.insert(pos, elmnt)`\n- `arr.pop(pos)` | `0 <= i < len(arr)`\n\n$O(1)$ в конец, $O(n)$ в общем случае","x":-3260,"y":160,"width":500,"height":280},
 		{"id":"44e18d46d0d7b999","type":"text","text":"### Array\n\n- **Тип**: `type(array)` -> smth like `Array<Int>`\n- **Длина**: `len(array)`\n\n**Предполагаем**:\n- Динамичность по запросу\n- Тип Any по умолчанию\n- Заполнен некоторыми значениями при создании\n\n#### Реализация\n\nНепрерывный блок памяти, в котором хранятся\na) объекты одного размера (для статических массивов)\nб) указатели на объекты (для динамических массивов)\n\n**Статический массив(C style)**\n`int arr[5] = {1, 2, 3, 4, 5};`\n\n**Динамический массив (\"Vector\", Python list, Java ArrayList)**\nРеализуется как:\n\n- Буфер (array) – выделенный блок памяти определённой ёмкости.\n    \n- Размер (size) – фактическое количество элементов.\n    \n- Ёмкость (capacity) – сколько элементов может влезть без перевыделения.\n    \n\nКогда массив заполняется:\n\n1. Выделяется новый блок памяти (обычно увеличенный в 1.5–2 раза).\n    \n2. Старые элементы копируются ($O(n)$).\n    \n3. Новый элемент добавляется.","x":-3680,"y":-732,"width":780,"height":792},
-		{"id":"5ec1fb0b7ca99cb2","x":1160,"y":-732,"width":460,"height":312,"type":"text","text":"#### Stack\n"},
-		{"id":"b3256aa7b7e4f503","x":1680,"y":-732,"width":580,"height":312,"type":"text","text":""}
+		{"id":"5ec1fb0b7ca99cb2","x":1060,"y":-732,"width":460,"height":328,"type":"text","text":"#### Stack\n"},
+		{"id":"b3256aa7b7e4f503","x":1580,"y":-732,"width":460,"height":328,"type":"text","text":"#### Queue"},
+		{"id":"23b231db8607a243","x":2080,"y":-732,"width":560,"height":328,"type":"text","text":"#### Deque"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
