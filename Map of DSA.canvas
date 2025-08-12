@@ -7,8 +7,8 @@
 		{"id":"f02a160e094281b5","type":"group","x":-3720,"y":-760,"width":2580,"height":840,"label":"Definition and implementation"},
 		{"id":"79f1928828b930cd","type":"group","x":-3320,"y":2040,"width":2360,"height":760,"label":"Algorithms: Arrays"},
 		{"id":"cc2567c20622eff7","x":-880,"y":780,"width":1700,"height":840,"type":"group","label":"Methods"},
+		{"id":"37ebefee8b531617","x":1040,"y":-752,"width":1620,"height":792,"type":"group","label":"Stack, queue, deque"},
 		{"id":"41ba00db0b6cc136","type":"group","x":-880,"y":2040,"width":1340,"height":800,"label":"Algorithms: Set & Dict"},
-		{"id":"37ebefee8b531617","x":1040,"y":-752,"width":1620,"height":632,"type":"group","label":"Stack, queue, deque"},
 		{"id":"3265595402f90c17","type":"group","x":-3720,"y":820,"width":960,"height":840,"label":"String and tuple methods"},
 		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":480,"label":"Patterns: Arrays"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-2630,"y":580,"width":670,"height":1000,"label":"Update / Delete"},
@@ -17,7 +17,6 @@
 		{"id":"a6ecb3cb0c7025b6","type":"group","x":-3280,"y":2120,"width":720,"height":340,"label":"Basic classes: Arrays"},
 		{"id":"19c50a914f307417","type":"group","x":-2630,"y":206,"width":670,"height":314,"label":"Create"},
 		{"id":"633aa69370a5f45f","type":"group","x":-3280,"y":2520,"width":500,"height":240,"label":"Other: Arrays"},
-		{"id":"77d28977a68e8910","x":1070,"y":-265,"width":250,"height":60,"type":"text","text":""},
 		{"id":"fe1824679faa31ac","type":"text","text":"#### Фильтрация\n\n-  `[x for x in lst if cond(x)]` (отдельно для целей фильтрации)\n- `filter(cond, lst)`","x":-1860,"y":954,"width":640,"height":160},
 		{"id":"be51c1c38eb3c224","type":"text","text":"#### Агрегация\n\n- `sum(arr)` \n- `min(arr)`, `max(arr)`\n- `all(lst)`, `any(lst)` - конъюнкция/дизъюнкция\n\n```python\nimport statistics\nstatistics.mean(lst)   \nstatistics.median(lst)   \nstatistics.mode(lst)   \nstatistics.stdev(lst)\n\n```","x":-1860,"y":614,"width":640,"height":323},
 		{"id":"72a7a8461b6fbd4d","type":"text","text":"#### Поиск\n- `elmnt in arr`\n- `arr.index()` - исключение, если нет элемента\n- `arr.count(elmnt)` - подсчёт количества вхождений\n\n$O(n)$\n\n\\+ bisect - для бинарного поиска: $O(nlogn)$","x":-1860,"y":340,"width":640,"height":254},
@@ -51,7 +50,8 @@
 		{"id":"44e18d46d0d7b999","type":"text","text":"### Array\n\n- **Тип**: `type(array)` -> smth like `Array<Int>`\n- **Длина**: `len(array)`\n\n**Предполагаем**:\n- Динамичность по запросу\n- Тип Any по умолчанию\n- Заполнен некоторыми значениями при создании\n\n#### Реализация\n\nНепрерывный блок памяти, в котором хранятся\na) объекты одного размера (для статических массивов)\nб) указатели на объекты (для динамических массивов)\n\n**Статический массив(C style)**\n`int arr[5] = {1, 2, 3, 4, 5};`\n\n**Динамический массив (\"Vector\", Python list, Java ArrayList)**\nРеализуется как:\n\n- Буфер (array) – выделенный блок памяти определённой ёмкости.\n    \n- Размер (size) – фактическое количество элементов.\n    \n- Ёмкость (capacity) – сколько элементов может влезть без перевыделения.\n    \n\nКогда массив заполняется:\n\n1. Выделяется новый блок памяти (обычно увеличенный в 1.5–2 раза).\n    \n2. Старые элементы копируются ($O(n)$).\n    \n3. Новый элемент добавляется.","x":-3680,"y":-732,"width":780,"height":792},
 		{"id":"5ec1fb0b7ca99cb2","x":1060,"y":-732,"width":460,"height":452,"type":"text","text":"#### Stack\n\n**LIFO (Last-In-First-Out)** data structure\n\n**Methods**:\n- Push -> add element to top\n- Pop -> remove element from top\n- Peek -> look at top without removing\n\n"},
 		{"id":"b3256aa7b7e4f503","x":1580,"y":-732,"width":460,"height":452,"type":"text","text":"#### Queue\n\n**FIFO (First-In-First-Out)** data structure\n\n**Methods**:\n\n- Enqueue -> add element to rear\n- Dequeue -> remove element from front\n- Peek -> look at front without removing"},
-		{"id":"23b231db8607a243","x":2080,"y":-732,"width":560,"height":452,"type":"text","text":"#### Deque\n\n**Double-ended queue**, allows insertion/removal from both ends efficiently\n\n**Methods**:\n\n|Operation|Method|Time Complexity|\n|---|---|---|\n|Append right|`append(x)`|O(1)|\n|Append left|`appendleft(x)`|O(1)|\n|Pop right|`pop()`|O(1)|\n|Pop left|`popleft()`|O(1)|\n|Extend right|`extend(iterable)`|O(k)|\n|Extend left|`extendleft(iterable)`|O(k)|\n|Rotate|`rotate(n)`|O(k)|"}
+		{"id":"23b231db8607a243","x":2080,"y":-732,"width":560,"height":452,"type":"text","text":"#### Deque\n\n**Double-ended queue**, allows insertion/removal from both ends efficiently\n\n**Methods**:\n\n|Operation|Method|Time Complexity|\n|---|---|---|\n|Append right|`append(x)`|O(1)|\n|Append left|`appendleft(x)`|O(1)|\n|Pop right|`pop()`|O(1)|\n|Pop left|`popleft()`|O(1)|\n|Extend right|`extend(iterable)`|O(k)|\n|Extend left|`extendleft(iterable)`|O(k)|\n|Rotate|`rotate(n)`|O(k)|"},
+		{"id":"77d28977a68e8910","x":1220,"y":-160,"width":1290,"height":132,"type":"text","text":"#### Implementation\n"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
@@ -60,6 +60,9 @@
 		{"id":"275fbd97efa4c415","fromNode":"cf14f2fa1bb1d26b","fromSide":"bottom","toNode":"41ba00db0b6cc136","toSide":"top"},
 		{"id":"23545b1b1dd3f0f4","fromNode":"6aea982c069e0a85","fromSide":"bottom","toNode":"da92375ab5ddd86b","toSide":"top"},
 		{"id":"eab2842bbaa6d22b","fromNode":"ec8cfa4201a8381c","fromSide":"bottom","toNode":"da92375ab5ddd86b","toSide":"top"},
-		{"id":"2c462e24d801d225","fromNode":"da92375ab5ddd86b","fromSide":"right","toNode":"7f8fb029aba1122e","toSide":"left"}
+		{"id":"2c462e24d801d225","fromNode":"da92375ab5ddd86b","fromSide":"right","toNode":"7f8fb029aba1122e","toSide":"left"},
+		{"id":"d1450ef9cb6085f2","fromNode":"5ec1fb0b7ca99cb2","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"},
+		{"id":"b8e4bf25131424b2","fromNode":"b3256aa7b7e4f503","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"},
+		{"id":"638360f38de30f45","fromNode":"23b231db8607a243","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"}
 	]
 }
