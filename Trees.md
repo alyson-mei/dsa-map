@@ -5,6 +5,9 @@
 - **Diameter** - length of the longest path between any two nodes
 
 ## 2. Traversals
+- Pre-order, in-order, post-order
+- Level order
+
 ## 3. Basic problems
 
 ### 3.1. Important
