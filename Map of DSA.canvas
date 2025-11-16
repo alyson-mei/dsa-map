@@ -71,7 +71,7 @@
 		{"id":"8408b4a9834cafd7","x":-3290,"y":4280,"width":340,"height":80,"type":"text","text":"### Fast and slow pointers"},
 		{"id":"6c734726701d8446","x":-2520,"y":3560,"width":320,"height":60,"type":"text","text":"### Linear scan"},
 		{"id":"c07fd2585d96247e","x":-2520,"y":3720,"width":320,"height":60,"type":"text","text":"### Nested iteration"},
-		{"id":"c2686757e3b293de","x":-2160,"y":3560,"width":560,"height":580,"type":"text","text":"### Binary search\n\n1\\. Sorted array, len = n\na) \n```python\nl, r = 0, n - 1\nwhile l <= r:\n\tm = (l + r) // 2\n\tif arr[m] < target:\n\t\tl = m + 1\n\telif arr[m] > target:\n\t\tr = m - 1\n\telse:\n\t\treturn m\nif \n```"}
+		{"id":"c2686757e3b293de","x":-2160,"y":3560,"width":560,"height":580,"type":"text","text":"### Binary search\n\n1\\. Sorted array, len = n\na) \n```python\nl, r = 0, n - 1\nwhile l <= r:\n\tm = (l + r) // 2\n\tif arr[m] < target:\n\t\tl = m + 1\n\telif arr[m] > target:\n\t\tr = m - 1\n\telse:\n\t\treturn m\nreturn -1\n```"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
