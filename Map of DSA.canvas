@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"30c41d80592b44e8","type":"group","x":-3760,"y":-840,"width":2680,"height":2520,"label":"Arrays (and array-like DS)"},
-		{"id":"304e0fb42380a91e","type":"group","x":-3640,"y":3480,"width":4280,"height":1520,"label":"Patterns"},
+		{"id":"304e0fb42380a91e","type":"group","x":-3640,"y":3480,"width":4280,"height":1520,"label":"Patterns | If there are several patterns for the problem, I choose the most significant one"},
 		{"id":"cf14f2fa1bb1d26b","type":"group","x":-920,"y":-840,"width":1780,"height":2520,"label":"Hash-based DS"},
 		{"id":"37ebefee8b531617","type":"group","x":1040,"y":-752,"width":1620,"height":2432,"label":"Stack, queue, deque"},
 		{"id":"79f1928828b930cd","type":"group","x":-3320,"y":2040,"width":2360,"height":1160,"label":"Algorithms: Arrays"},
@@ -9,8 +9,8 @@
 		{"id":"4d3f2c23eedb59ef","type":"group","x":-2680,"y":140,"width":1540,"height":1480,"label":"Global CRUD"},
 		{"id":"f02a160e094281b5","type":"group","x":-3720,"y":-760,"width":2580,"height":840,"label":"Definition and implementation"},
 		{"id":"41ba00db0b6cc136","type":"group","x":-880,"y":2040,"width":1340,"height":1200,"label":"Algorithms: Set & Dict"},
+		{"id":"047c9b0761f0a638","type":"group","x":-3620,"y":3540,"width":1040,"height":1400,"label":"Basic patterns"},
 		{"id":"cc2567c20622eff7","type":"group","x":-880,"y":780,"width":1700,"height":840,"label":"Methods"},
-		{"id":"047c9b0761f0a638","type":"group","x":-3620,"y":3540,"width":1040,"height":1340,"label":"Basic patterns"},
 		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":920,"label":"Patterns: Arrays"},
 		{"id":"a546dd684a89ae8a","type":"group","x":-2540,"y":3540,"width":1160,"height":1120,"label":"Iteration patterns"},
 		{"id":"e4c78baace2debee","type":"group","x":1040,"y":2040,"width":1620,"height":760,"label":"Algorithms: Stack, Queue, Deque"},
@@ -67,12 +67,12 @@
 		{"id":"6c734726701d8446","type":"text","text":"### Linear scan","x":-2520,"y":3560,"width":320,"height":60},
 		{"id":"c07fd2585d96247e","type":"text","text":"### Nested iteration","x":-2520,"y":3720,"width":320,"height":60},
 		{"id":"c2686757e3b293de","type":"text","text":"### Binary search\n\n1\\. Sorted array, len = n\na) find target\n```python\nl, r = 0, n - 1\nwhile l <= r:\n\tm = (l + r) // 2\n\tif arr[m] < target:\n\t\tl = m + 1\n\telif arr[m] > target:\n\t\tr = m - 1\n\telse:\n\t\treturn m\nreturn -1\n\n# [3, 4, 4, 8, 9, 11] 4 -> 2\n# [3, 4, 4, 8, 9, 11] 5\n#\t\t r  l\t\n```\nb) max lower bound of target (opt: != target)\n```python\nif arr[m] <= target: l = m + 1\n...\nreturn r # -1..len(arr) - 1\n```\nopt: idx of first element that is > target\n\nc) min upper bound of target (opt: != target)\n```python\nif arr[m] >= target: r = m - 1\n...\nreturn l # 0..len(arr)\n```\n\nopt: idx of last element that is < target\n","x":-2160,"y":3560,"width":560,"height":920},
-		{"id":"e18f6cbd25f4aae8","type":"text","text":"### Hashing\n\n\n| N   | Title              | Diff |\n| --- | ------------------ | ---- |\n|     | Isomorphic strings | Easy |\n","x":-3120,"y":4450,"width":500,"height":200},
+		{"id":"e18f6cbd25f4aae8","type":"text","text":"### Hashing\n\n\n| N   | Title                 | Diff |\n| --- | --------------------- | ---- |\n|     | Isomorphic strings    | Easy |\n|     | Subarray Sum Equals K |      |\n","x":-3120,"y":4450,"width":500,"height":230},
 		{"id":"e82fd374cc8e32fc","type":"text","text":"### Prefix sum","x":-3580,"y":4450,"width":427,"height":200},
-		{"id":"8408b4a9834cafd7","type":"text","text":"### Fast and slow pointers","x":-3290,"y":4690,"width":340,"height":80},
 		{"id":"38b4cc33ef231763","type":"text","text":"### Array/Strings\n\n| N   | Title                                                       | Diff |\n| --- | ----------------------------------------------------------- | ---- |\n|     | Summary ranges                                              | Easy |\n|     | Longest Strictly Increasing or Strictly Decreasing Subarray | Easy |\n|     | Maximize Distance to Closest Person                         | Med  |\n|     |                                                             |      |\n","x":-3540,"y":3590,"width":880,"height":290},
 		{"id":"d1b1bd5a2364f014","type":"text","text":"### Two pointers\n\n\n| N   | Title               | Diff |\n| --- | ------------------- | ---- |\n|     | Valid Palindrome II | Easy |\n","x":-3580,"y":3920,"width":427,"height":440},
-		{"id":"3b38227ae06eadf0","type":"text","text":"### Sliding window \n\n| N   | Title                                          | Diff |\n| --- | ---------------------------------------------- | ---- |\n|     | Longest Substring Without Repeating Characters | Med  |","x":-3120,"y":3920,"width":500,"height":440}
+		{"id":"3b38227ae06eadf0","type":"text","text":"### Sliding window \n\n| N   | Title                                          | Diff |\n| --- | ---------------------------------------------- | ---- |\n|     | Longest Substring Without Repeating Characters | Med  |\n","x":-3120,"y":3920,"width":500,"height":440},
+		{"id":"8408b4a9834cafd7","type":"text","text":"### Fast and slow pointers","x":-3290,"y":4780,"width":340,"height":80}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
