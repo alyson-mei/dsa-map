@@ -64,14 +64,15 @@
 		{"id":"5ec1fb0b7ca99cb2","type":"text","text":"#### Stack\n\n**LIFO (Last-In-First-Out)** data structure\n\n**Methods**:\n- Push -> add element to top\n- Pop -> remove element from top\n- Peek -> look at top without removing\n\n","x":1060,"y":-732,"width":460,"height":452},
 		{"id":"b3256aa7b7e4f503","type":"text","text":"#### Queue\n\n**FIFO (First-In-First-Out)** data structure\n\n**Methods**:\n\n- Enqueue -> add element to rear\n- Dequeue -> remove element from front\n- Peek -> look at front without removing","x":1580,"y":-732,"width":460,"height":452},
 		{"id":"23b231db8607a243","type":"text","text":"#### Deque\n\n**Double-ended queue**, allows insertion/removal from both ends efficiently\n\n**Methods**:\n\n|Operation|Method|Time Complexity|\n|---|---|---|\n|Append right|`append(x)`|O(1)|\n|Append left|`appendleft(x)`|O(1)|\n|Pop right|`pop()`|O(1)|\n|Pop left|`popleft()`|O(1)|\n|Extend right|`extend(iterable)`|O(k)|\n|Extend left|`extendleft(iterable)`|O(k)|\n|Rotate|`rotate(n)`|O(k)|","x":2080,"y":-732,"width":560,"height":452},
-		{"id":"d1b1bd5a2364f014","type":"text","text":"### Two pointers","x":-3580,"y":3560,"width":427,"height":440},
-		{"id":"3b38227ae06eadf0","x":-3120,"y":3560,"width":500,"height":440,"type":"text","text":"### Sliding window"},
-		{"id":"e82fd374cc8e32fc","x":-3580,"y":4040,"width":427,"height":200,"type":"text","text":"### Prefix sum"},
-		{"id":"e18f6cbd25f4aae8","x":-3120,"y":4040,"width":500,"height":200,"type":"text","text":"### Hashing"},
-		{"id":"8408b4a9834cafd7","x":-3290,"y":4280,"width":340,"height":80,"type":"text","text":"### Fast and slow pointers"},
 		{"id":"6c734726701d8446","x":-2520,"y":3560,"width":320,"height":60,"type":"text","text":"### Linear scan"},
 		{"id":"c07fd2585d96247e","x":-2520,"y":3720,"width":320,"height":60,"type":"text","text":"### Nested iteration"},
-		{"id":"c2686757e3b293de","x":-2160,"y":3560,"width":560,"height":920,"type":"text","text":"### Binary search\n\n1\\. Sorted array, len = n\na) find target\n```python\nl, r = 0, n - 1\nwhile l <= r:\n\tm = (l + r) // 2\n\tif arr[m] < target:\n\t\tl = m + 1\n\telif arr[m] > target:\n\t\tr = m - 1\n\telse:\n\t\treturn m\nreturn -1\n\n# [3, 4, 4, 8, 9, 11] 4 -> 2\n# [3, 4, 4, 8, 9, 11] 5\n#\t\t r  l\t\n```\nb) max lower bound of target (opt: != target)\n```python\nif arr[m] <= target: l = m + 1\n...\nreturn l # 0..len(arr)\n```\nopt: idx of first element that is > target\n\nc) min upper bound of target (opt: != target)\n```python\nif arr[m] >= target: r = m - 1\n...\nreturn r # -1..len(arr) - 1\n```\n\nopt: idx of last element that is < target\n"}
+		{"id":"c2686757e3b293de","x":-2160,"y":3560,"width":560,"height":920,"type":"text","text":"### Binary search\n\n1\\. Sorted array, len = n\na) find target\n```python\nl, r = 0, n - 1\nwhile l <= r:\n\tm = (l + r) // 2\n\tif arr[m] < target:\n\t\tl = m + 1\n\telif arr[m] > target:\n\t\tr = m - 1\n\telse:\n\t\treturn m\nreturn -1\n\n# [3, 4, 4, 8, 9, 11] 4 -> 2\n# [3, 4, 4, 8, 9, 11] 5\n#\t\t r  l\t\n```\nb) max lower bound of target (opt: != target)\n```python\nif arr[m] <= target: l = m + 1\n...\nreturn l # 0..len(arr)\n```\nopt: idx of first element that is > target\n\nc) min upper bound of target (opt: != target)\n```python\nif arr[m] >= target: r = m - 1\n...\nreturn r # -1..len(arr) - 1\n```\n\nopt: idx of last element that is < target\n"},
+		{"id":"e18f6cbd25f4aae8","x":-3120,"y":4450,"width":500,"height":200,"type":"text","text":"### Hashing"},
+		{"id":"d1b1bd5a2364f014","type":"text","text":"### Two pointers","x":-3580,"y":3970,"width":427,"height":440},
+		{"id":"e82fd374cc8e32fc","x":-3580,"y":4450,"width":427,"height":200,"type":"text","text":"### Prefix sum"},
+		{"id":"8408b4a9834cafd7","x":-3290,"y":4690,"width":340,"height":80,"type":"text","text":"### Fast and slow pointers"},
+		{"id":"3b38227ae06eadf0","x":-3120,"y":3970,"width":500,"height":440,"type":"text","text":"### Sliding window"},
+		{"id":"38b4cc33ef231763","x":-3540,"y":3590,"width":880,"height":290,"type":"text","text":"### \"Array\"\n\n|     | Title |\n| --- | ----- |\n|     |       |\n"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
