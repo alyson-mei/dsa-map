@@ -70,8 +70,8 @@
 		{"id":"e18f6cbd25f4aae8","x":-3120,"y":4040,"width":500,"height":200,"type":"text","text":"### Hashing"},
 		{"id":"8408b4a9834cafd7","x":-3290,"y":4280,"width":340,"height":80,"type":"text","text":"### Fast and slow pointers"},
 		{"id":"6c734726701d8446","x":-2520,"y":3560,"width":320,"height":60,"type":"text","text":"### Linear scan"},
-		{"id":"c2686757e3b293de","x":-2120,"y":3560,"width":250,"height":60,"type":"text","text":""},
-		{"id":"c07fd2585d96247e","x":-2483,"y":3729,"width":250,"height":60,"type":"text","text":""}
+		{"id":"c2686757e3b293de","x":-2120,"y":3560,"width":250,"height":60,"type":"text","text":"### Bi"},
+		{"id":"c07fd2585d96247e","x":-2520,"y":3720,"width":320,"height":60,"type":"text","text":"### Nested iteration"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
