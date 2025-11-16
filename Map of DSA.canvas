@@ -12,6 +12,7 @@
 		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":920,"label":"Patterns: Arrays"},
 		{"id":"e4c78baace2debee","type":"group","x":1040,"y":2040,"width":1620,"height":760,"label":"Algorithms: Stack, Queue, Deque"},
 		{"id":"3265595402f90c17","type":"group","x":-3720,"y":820,"width":960,"height":840,"label":"String and tuple methods"},
+		{"id":"304e0fb42380a91e","x":-3682,"y":3442,"width":1030,"height":765,"type":"group","label":"Patterns"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-2630,"y":580,"width":670,"height":1000,"label":"Update / Delete"},
 		{"id":"6aa690f2b524dda5","type":"group","x":-3720,"y":140,"width":980,"height":620,"label":"Local CRUD"},
 		{"id":"96a6e6e558c80c91","type":"group","x":-1880,"y":320,"width":680,"height":834,"label":"Read / Aggregate / Filter / etc."},
@@ -20,6 +21,7 @@
 		{"id":"a6ecb3cb0c7025b6","type":"group","x":-3280,"y":2120,"width":720,"height":340,"label":"Basic classes: Arrays"},
 		{"id":"19c50a914f307417","type":"group","x":-2630,"y":206,"width":670,"height":314,"label":"Create"},
 		{"id":"633aa69370a5f45f","type":"group","x":-3280,"y":2520,"width":500,"height":240,"label":"Other: Arrays"},
+		{"id":"2a34b8b925d279be","type":"text","text":"","x":-3662,"y":3462,"width":250,"height":60},
 		{"id":"f9ded7ac3a07b0d4","type":"text","text":"#### Доступ по индексу (read/update)\n- `x = arr[i]` | `0 <= i < len(arr)`\n- `arr[i] = 17` | `0 <= i < len(arr)`\n\n**Замечание**:\n- Можно использовать отрицательные (syntactic sugar)\n\n$O(1)$","x":-3700,"y":160,"width":400,"height":280},
 		{"id":"1b0a3f2961c3a69a","type":"text","text":"#### Добавление/удаление (create/delete)\n\n- `arr.append(elmnt)`\n- `x = arr.pop()` | `len(arr) > 0`\n- `arr.insert(pos, elmnt)`\n- `arr.pop(pos)` | `0 <= i < len(arr)`\n\n$O(1)$ в конец, $O(n)$ в общем случае","x":-3260,"y":160,"width":500,"height":280},
 		{"id":"44e18d46d0d7b999","type":"text","text":"### Array\n\n- **Тип**: `type(array)` -> smth like `Array<Int>`\n- **Длина**: `len(array)`\n\n**Предполагаем**:\n- Динамичность по запросу\n- Тип Any по умолчанию\n- Заполнен некоторыми значениями при создании\n\n#### Реализация\n\nНепрерывный блок памяти, в котором хранятся\na) объекты одного размера (для статических массивов)\nб) указатели на объекты (для динамических массивов)\n\n**Статический массив(C style)**\n`int arr[5] = {1, 2, 3, 4, 5};`\n\n**Динамический массив (\"Vector\", Python list, Java ArrayList)**\nРеализуется как:\n\n- Буфер (array) – выделенный блок памяти определённой ёмкости.\n    \n- Размер (size) – фактическое количество элементов.\n    \n- Ёмкость (capacity) – сколько элементов может влезть без перевыделения.\n    \n\nКогда массив заполняется:\n\n1. Выделяется новый блок памяти (обычно увеличенный в 1.5–2 раза).\n    \n2. Старые элементы копируются ($O(n)$).\n    \n3. Новый элемент добавляется.","x":-3680,"y":-732,"width":780,"height":792},
@@ -61,7 +63,7 @@
 		{"id":"5ec1fb0b7ca99cb2","type":"text","text":"#### Stack\n\n**LIFO (Last-In-First-Out)** data structure\n\n**Methods**:\n- Push -> add element to top\n- Pop -> remove element from top\n- Peek -> look at top without removing\n\n","x":1060,"y":-732,"width":460,"height":452},
 		{"id":"b3256aa7b7e4f503","type":"text","text":"#### Queue\n\n**FIFO (First-In-First-Out)** data structure\n\n**Methods**:\n\n- Enqueue -> add element to rear\n- Dequeue -> remove element from front\n- Peek -> look at front without removing","x":1580,"y":-732,"width":460,"height":452},
 		{"id":"23b231db8607a243","type":"text","text":"#### Deque\n\n**Double-ended queue**, allows insertion/removal from both ends efficiently\n\n**Methods**:\n\n|Operation|Method|Time Complexity|\n|---|---|---|\n|Append right|`append(x)`|O(1)|\n|Append left|`appendleft(x)`|O(1)|\n|Pop right|`pop()`|O(1)|\n|Pop left|`popleft()`|O(1)|\n|Extend right|`extend(iterable)`|O(k)|\n|Extend left|`extendleft(iterable)`|O(k)|\n|Rotate|`rotate(n)`|O(k)|","x":2080,"y":-732,"width":560,"height":452},
-		{"id":"d1b1bd5a2364f014","x":-3715,"y":3800,"width":915,"height":667,"type":"text","text":""}
+		{"id":"d1b1bd5a2364f014","type":"text","text":"### Two pointers","x":-3587,"y":3520,"width":2707,"height":1280}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
