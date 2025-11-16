@@ -11,8 +11,8 @@
 		{"id":"41ba00db0b6cc136","type":"group","x":-880,"y":2040,"width":1340,"height":1200,"label":"Algorithms: Set & Dict"},
 		{"id":"cc2567c20622eff7","type":"group","x":-880,"y":780,"width":1700,"height":840,"label":"Methods"},
 		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":920,"label":"Patterns: Arrays"},
+		{"id":"a546dd684a89ae8a","x":-2540,"y":3540,"width":1160,"height":1120,"type":"group","label":"Iteration patterns"},
 		{"id":"e4c78baace2debee","type":"group","x":1040,"y":2040,"width":1620,"height":760,"label":"Algorithms: Stack, Queue, Deque"},
-		{"id":"a546dd684a89ae8a","x":-2540,"y":3540,"width":1160,"height":860,"type":"group","label":"Iteration patterns"},
 		{"id":"047c9b0761f0a638","x":-3600,"y":3540,"width":1000,"height":860,"type":"group","label":"Basic patterns"},
 		{"id":"3265595402f90c17","type":"group","x":-3720,"y":820,"width":960,"height":840,"label":"String and tuple methods"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-2630,"y":580,"width":670,"height":1000,"label":"Update / Delete"},
@@ -71,7 +71,7 @@
 		{"id":"8408b4a9834cafd7","x":-3290,"y":4280,"width":340,"height":80,"type":"text","text":"### Fast and slow pointers"},
 		{"id":"6c734726701d8446","x":-2520,"y":3560,"width":320,"height":60,"type":"text","text":"### Linear scan"},
 		{"id":"c07fd2585d96247e","x":-2520,"y":3720,"width":320,"height":60,"type":"text","text":"### Nested iteration"},
-		{"id":"c2686757e3b293de","x":-2160,"y":3560,"width":560,"height":760,"type":"text","text":"### Binary search\n\n1\\. Sorted array, len = n\na) find target\n```python\nl, r = 0, n - 1\nwhile l <= r:\n\tm = (l + r) // 2\n\tif arr[m] < target:\n\t\tl = m + 1\n\telif arr[m] > target:\n\t\tr = m - 1\n\telse:\n\t\treturn m\nreturn -1\n\n# [3, 4, 4, 8, 9, 11] 4 -> 2\n# [3, 4, 4, 8, 9, 11] 5\n#\t\t r  l\t\n```\nb) max lower bound of target (opt: != target)\nopt: idx of first element that is > target\n```python\nif arr[m] <= target: l = m + 1\n...\nreturn l # 0..len(arr)\n```\nc) min upper bound of target (opt: != target)\nopt: idx of last element that is < target\n```python\nif arr[m] >= target: r = m - 1\n...\nreturn r # -1..len(arr) - 1\n```"}
+		{"id":"c2686757e3b293de","x":-2160,"y":3560,"width":560,"height":920,"type":"text","text":"### Binary search\n\n1\\. Sorted array, len = n\na) find target\n```python\nl, r = 0, n - 1\nwhile l <= r:\n\tm = (l + r) // 2\n\tif arr[m] < target:\n\t\tl = m + 1\n\telif arr[m] > target:\n\t\tr = m - 1\n\telse:\n\t\treturn m\nreturn -1\n\n# [3, 4, 4, 8, 9, 11] 4 -> 2\n# [3, 4, 4, 8, 9, 11] 5\n#\t\t r  l\t\n```\nb) max lower bound of target (opt: != target)\n```python\nif arr[m] <= target: l = m + 1\n...\nreturn l # 0..len(arr)\n```\nopt: idx of first element that is > target\n\nc) min upper bound of target (opt: != target)\nopt: idx of last element that is < target\n"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
