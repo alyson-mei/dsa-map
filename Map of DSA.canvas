@@ -12,6 +12,7 @@
 		{"id":"cc2567c20622eff7","type":"group","x":-880,"y":780,"width":1700,"height":840,"label":"Methods"},
 		{"id":"2a94b59a164c0ba3","type":"group","x":-2499,"y":2120,"width":1479,"height":920,"label":"Patterns: Arrays"},
 		{"id":"e4c78baace2debee","type":"group","x":1040,"y":2040,"width":1620,"height":760,"label":"Algorithms: Stack, Queue, Deque"},
+		{"id":"047c9b0761f0a638","x":-3600,"y":3540,"width":1000,"height":1140,"type":"group","label":"Basic patterns"},
 		{"id":"3265595402f90c17","type":"group","x":-3720,"y":820,"width":960,"height":840,"label":"String and tuple methods"},
 		{"id":"4f159f671d3e6fb6","type":"group","x":-2630,"y":580,"width":670,"height":1000,"label":"Update / Delete"},
 		{"id":"6aa690f2b524dda5","type":"group","x":-3720,"y":140,"width":980,"height":620,"label":"Local CRUD"},
@@ -62,7 +63,8 @@
 		{"id":"5ec1fb0b7ca99cb2","type":"text","text":"#### Stack\n\n**LIFO (Last-In-First-Out)** data structure\n\n**Methods**:\n- Push -> add element to top\n- Pop -> remove element from top\n- Peek -> look at top without removing\n\n","x":1060,"y":-732,"width":460,"height":452},
 		{"id":"b3256aa7b7e4f503","type":"text","text":"#### Queue\n\n**FIFO (First-In-First-Out)** data structure\n\n**Methods**:\n\n- Enqueue -> add element to rear\n- Dequeue -> remove element from front\n- Peek -> look at front without removing","x":1580,"y":-732,"width":460,"height":452},
 		{"id":"23b231db8607a243","type":"text","text":"#### Deque\n\n**Double-ended queue**, allows insertion/removal from both ends efficiently\n\n**Methods**:\n\n|Operation|Method|Time Complexity|\n|---|---|---|\n|Append right|`append(x)`|O(1)|\n|Append left|`appendleft(x)`|O(1)|\n|Pop right|`pop()`|O(1)|\n|Pop left|`popleft()`|O(1)|\n|Extend right|`extend(iterable)`|O(k)|\n|Extend left|`extendleft(iterable)`|O(k)|\n|Rotate|`rotate(n)`|O(k)|","x":2080,"y":-732,"width":560,"height":452},
-		{"id":"d1b1bd5a2364f014","type":"text","text":"### Two pointers","x":-3587,"y":3520,"width":2707,"height":1440}
+		{"id":"d1b1bd5a2364f014","type":"text","text":"### Two pointers","x":-3580,"y":3560,"width":427,"height":440},
+		{"id":"3b38227ae06eadf0","x":-3120,"y":3560,"width":250,"height":60,"type":"text","text":""}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
