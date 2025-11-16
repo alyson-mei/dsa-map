@@ -64,7 +64,10 @@
 		{"id":"b3256aa7b7e4f503","type":"text","text":"#### Queue\n\n**FIFO (First-In-First-Out)** data structure\n\n**Methods**:\n\n- Enqueue -> add element to rear\n- Dequeue -> remove element from front\n- Peek -> look at front without removing","x":1580,"y":-732,"width":460,"height":452},
 		{"id":"23b231db8607a243","type":"text","text":"#### Deque\n\n**Double-ended queue**, allows insertion/removal from both ends efficiently\n\n**Methods**:\n\n|Operation|Method|Time Complexity|\n|---|---|---|\n|Append right|`append(x)`|O(1)|\n|Append left|`appendleft(x)`|O(1)|\n|Pop right|`pop()`|O(1)|\n|Pop left|`popleft()`|O(1)|\n|Extend right|`extend(iterable)`|O(k)|\n|Extend left|`extendleft(iterable)`|O(k)|\n|Rotate|`rotate(n)`|O(k)|","x":2080,"y":-732,"width":560,"height":452},
 		{"id":"d1b1bd5a2364f014","type":"text","text":"### Two pointers","x":-3580,"y":3560,"width":427,"height":440},
-		{"id":"3b38227ae06eadf0","x":-3120,"y":3560,"width":500,"height":440,"type":"text","text":""}
+		{"id":"3b38227ae06eadf0","x":-3120,"y":3560,"width":500,"height":440,"type":"text","text":"### Sliding window"},
+		{"id":"e82fd374cc8e32fc","x":-3580,"y":4040,"width":427,"height":200,"type":"text","text":"### Prefix sum"},
+		{"id":"e18f6cbd25f4aae8","x":-3120,"y":4040,"width":500,"height":200,"type":"text","text":"### Hashing"},
+		{"id":"8408b4a9834cafd7","x":-3290,"y":4340,"width":340,"height":80,"type":"text","text":"### Fast and slow pointers"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
@@ -77,6 +80,7 @@
 		{"id":"d1450ef9cb6085f2","fromNode":"5ec1fb0b7ca99cb2","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"},
 		{"id":"b8e4bf25131424b2","fromNode":"b3256aa7b7e4f503","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"},
 		{"id":"638360f38de30f45","fromNode":"23b231db8607a243","fromSide":"bottom","toNode":"77d28977a68e8910","toSide":"top"},
-		{"id":"263ade6ab9e4298f","fromNode":"37ebefee8b531617","fromSide":"bottom","toNode":"e4c78baace2debee","toSide":"top"}
+		{"id":"263ade6ab9e4298f","fromNode":"37ebefee8b531617","fromSide":"bottom","toNode":"e4c78baace2debee","toSide":"top"},
+		{"id":"706a633131e082f5","fromNode":"d1b1bd5a2364f014","fromSide":"right","toNode":"3b38227ae06eadf0","toSide":"left"}
 	]
 }
