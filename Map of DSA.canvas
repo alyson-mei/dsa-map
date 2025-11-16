@@ -64,7 +64,7 @@
 		{"id":"b3256aa7b7e4f503","type":"text","text":"#### Queue\n\n**FIFO (First-In-First-Out)** data structure\n\n**Methods**:\n\n- Enqueue -> add element to rear\n- Dequeue -> remove element from front\n- Peek -> look at front without removing","x":1580,"y":-732,"width":460,"height":452},
 		{"id":"23b231db8607a243","type":"text","text":"#### Deque\n\n**Double-ended queue**, allows insertion/removal from both ends efficiently\n\n**Methods**:\n\n|Operation|Method|Time Complexity|\n|---|---|---|\n|Append right|`append(x)`|O(1)|\n|Append left|`appendleft(x)`|O(1)|\n|Pop right|`pop()`|O(1)|\n|Pop left|`popleft()`|O(1)|\n|Extend right|`extend(iterable)`|O(k)|\n|Extend left|`extendleft(iterable)`|O(k)|\n|Rotate|`rotate(n)`|O(k)|","x":2080,"y":-732,"width":560,"height":452},
 		{"id":"d1b1bd5a2364f014","type":"text","text":"### Two pointers","x":-3580,"y":3560,"width":427,"height":440},
-		{"id":"3b38227ae06eadf0","x":-3120,"y":3560,"width":250,"height":60,"type":"text","text":""}
+		{"id":"3b38227ae06eadf0","x":-3120,"y":3560,"width":500,"height":440,"type":"text","text":""}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
