@@ -72,7 +72,7 @@
 		{"id":"e82fd374cc8e32fc","x":-3580,"y":4450,"width":427,"height":200,"type":"text","text":"### Prefix sum"},
 		{"id":"8408b4a9834cafd7","x":-3290,"y":4690,"width":340,"height":80,"type":"text","text":"### Fast and slow pointers"},
 		{"id":"3b38227ae06eadf0","x":-3120,"y":3970,"width":500,"height":440,"type":"text","text":"### Sliding window"},
-		{"id":"38b4cc33ef231763","x":-3540,"y":3590,"width":880,"height":290,"type":"text","text":"### \"Array\"\n\n| N   | Title                                                       |\n| --- | ----------------------------------------------------------- |\n|     | Summary ranges                                              |\n|     | Longest Strictly Increasing or Strictly Decreasing Subarray |\n|     | Maximize Distance to Closest Person                         |\n|     |                                                             |\n"}
+		{"id":"38b4cc33ef231763","x":-3540,"y":3590,"width":880,"height":290,"type":"text","text":"### \"Array\"\n\n| N   | Title                                                       | Diff |\n| --- | ----------------------------------------------------------- | ---- |\n|     | Summary ranges                                              | Easy |\n|     | Longest Strictly Increasing or Strictly Decreasing Subarray | Easy |\n|     | Maximize Distance to Closest Person                         | Med  |\n|     |                                                             |      |\n"}
 	],
 	"edges":[
 		{"id":"dd850a81b9e6daa7","fromNode":"f9ded7ac3a07b0d4","fromSide":"bottom","toNode":"3ab0bcbe9839b995","toSide":"top"},
